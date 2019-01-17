@@ -1,0 +1,32 @@
+1) Getting inputs and making them ready for trial refinements. 
+
+Map and model as obtained from EMDB and PDB:
+3a5x.pdb
+emd_1641.map
+
+Note, model is shifted w.r.t. the map. So 
+phenix.dock_in_map 3a5x.pdb emd_1641.map resolution=4
+was needed to shift model to match the map.
+This resulted in placed_model.pdb
+
+Running 
+qr.finalise placed_model.pdb
+produced placed_model_complete.pdb which is ready for trial refinements.
+
+2) Initial Phenix refinement (for reference):
+
+phenix.real_space_refine placed_model_complete.pdb emd_1641.map resolution=4 file_name_prefix=def >& def.log &
+phenix.real_space_refine placed_model_complete.pdb emd_1641.map resolution=4 ramachandran_restraints=false secondary_structure.enabled=false file_name_prefix=noRAMAnoSS >& noRAMAnoSS.log &
+phenix.real_space_refine placed_model_complete.pdb emd_1641.map resolution=4 secondary_structure.enabled=false file_name_prefix=noSS >& noSS.log &
+phenix.real_space_refine placed_model_complete.pdb emd_1641.map resolution=4 ramachandran_restraints=false file_name_prefix=noRAMA >& noRAMA.log &
+
+Comparison of Ramachandran plots:
+
+phenix.comparama placed_model_complete.pdb noSS_real_space_refined.pdb
+phenix.comparama placed_model_complete.pdb noRama_real_space_refined.pdb
+phenix.comparama placed_model_complete.pdb noRAMAnoSS_real_space_refined.pdb
+phenix.comparama placed_model_complete.pdb def_real_space_refined.pdb
+
+3) QM refinement of placed_model_complete.pdb.
+
+XXX
