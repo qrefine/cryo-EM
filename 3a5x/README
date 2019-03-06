@@ -35,4 +35,4 @@ clustering_false_xtb:
 (when clustering=false, XTB cost about one hour to calculate this structure once, do this later.
 nohup qr.refine placed_model_complete.pdb EMD-1641.map restraints=qm engine_name=xtb clustering=false gradient_only=true maxnum_residues_in_cluster=50 use_convergence_test=true rmsd_tolerance=0.001 max_bond_rmsd=0.01 > log 2>&1 &
 clustering_terachem:
-nohup qr.refine placed_model_complete.pdb EMD-1641.map restraints=qm engine_name=xtb clustering=true gradient_only=true stpmax=0.2 use_convergence_test=true rmsd_tolerance=0.001 max_bond_rmsd=0.01 parallel.method=slurm qsub_command='sbatch -N 1 -c 4 -p gpu' > log 2>&1 &
+nohup qr.refine placed_model_complete.pdb EMD-1641.map restraints=qm engine_name=xtb clustering=true gradient_only=true stpmax=0.2 use_convergence_test=true rmsd_tolerance=0.001 max_bond_rmsd=0.01 parallel.method=lsf qsub_command='bsub -n 4 -q gpu' > log 2>&1 &
