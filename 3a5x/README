@@ -29,9 +29,10 @@ phenix.comparama placed_model_complete.pdb def_real_space_refined.pdb
 
 3) QM refinement of placed_model_complete.pdb.
 
-clustering_xtb_no_qsub:
-nohup qr.refine placed_model_complete.pdb EMD-1641.map restraints=qm engine_name=xtb clustering=true gradient_only=true stpmax=0.2 quantum.method='-gfn2 -etemp 500 -gbsa h2o' use_convergence_test=true rmsd_tolerance=0.001 > log 2>&1 &
 clustering_xtb:
-nohup qr.refine placed_model_complete.pdb EMD-1641.map restraints=qm engine_name=xtb clustering=true gradient_only=true stpmax=0.2 quantum.method='-gfn2 -etemp 500 -gbsa h2o' use_convergence_test=true rmsd_tolerance=0.001 parallel.method=lsf qsub_command='bsub -x -n 4 -p gpu' > log 2>&1 &
+nohup qr.refine placed_model_complete.pdb EMD-1641.map restraints=qm engine_name=xtb clustering=true quantum.nproc=1 parallel.nproc=60 gradient_only=true maxnum_residues_in_cluster=50 use_convergence_test=true rmsd_tolerance=0.001 max_bond_rmsd=0.01 > log 2>&1 &
+clustering_false_xtb:
+(when clustering=false, XTB cost about one hour to calculate this structure once, do this later.
+nohup qr.refine placed_model_complete.pdb EMD-1641.map restraints=qm engine_name=xtb clustering=false gradient_only=true maxnum_residues_in_cluster=50 use_convergence_test=true rmsd_tolerance=0.001 max_bond_rmsd=0.01 > log 2>&1 &
 clustering_terachem:
-nohup qr.refine placed_model_complete.pdb EMD-1641.map restraints=qm engine_name=terachem clustering=true gradient_only=true stpmax=0.2 basis=6-31g use_convergence_test=true rmsd_tolerance=0.001 parallel.method=lsf qsub_command='bsub -x -n 4 -p gpu' > log 2>&1 &
+nohup qr.refine placed_model_complete.pdb EMD-1641.map restraints=qm engine_name=terachem clustering=true gradient_only=true stpmax=0.2 use_convergence_test=true rmsd_tolerance=0.001 max_bond_rmsd=0.01 parallel.method=lsf qsub_command='bsub -n 4 -q gpu' > log 2>&1 &
