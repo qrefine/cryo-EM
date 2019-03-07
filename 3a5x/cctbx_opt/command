@@ -1,0 +1,1 @@
+nohup qr.refine placed_model_complete.pdb mode=opt stpmax=3 gradient_only=true clustering=false use_convergence_test=true rmsd_tolerance=0.001 restraints=cctbx maxnum_residues_in_cluster=50 > log &
