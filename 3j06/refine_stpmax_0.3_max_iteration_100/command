@@ -1,0 +1,1 @@
+nohup qr.refine 3j06_no_ligand_box_complete.pdb 3j06_no_ligand_box.ccp4 mode=refine restraints=qm engine_name=xtb clustering=true max_bond_rmsd=0.005 quantum.nproc=1 parallel.nproc=40 gradient_only=true stpmax=0.3 use_convergence_test=true rmsd_tolerance=0.001 max_iterations_refine=100 > log &
