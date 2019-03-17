@@ -1,0 +1,2 @@
+nohup qr.refine 1oed_box_complete.pdb mode=opt restraints=qm engine_name=xtb clustering=true maxnum_residues_in_cluster=15 quantum.nproc=1 parallel.nproc=60 gradient_only=true stpmax=0.2 use_convergence_test=true rmsd_tolerance=0.001 max_iterations_refine=50 > log &
+
