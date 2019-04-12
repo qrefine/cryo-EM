@@ -1,2 +1,0 @@
-
-qr.refine chain_K_box.ccp4 chain_K_box_complete.pdb mode=refine restraints=qm engine_name=xtb clustering=true maxnum_residues_in_cluster=15 quantum.nproc=1 parallel.nproc=24 gradient_only=true stpmax=0.3 max_iterations_refine=200 max_bond_rmsd=0.005 > log
