@@ -1,0 +1,267 @@
+Starting Q|R
+version:   v1.0-37-gb8d9a6  
+Running refinement
+   input {
+     xray_data {
+       file_name = None
+       labels = None
+       high_resolution = None
+       low_resolution = None
+       outliers_rejection = True
+       french_wilson_scale = True
+       french_wilson {
+         max_bins = 60
+         min_bin_size = 40
+       }
+       sigma_fobs_rejection_criterion = None
+       sigma_iobs_rejection_criterion = None
+       ignore_all_zeros = True
+       force_anomalous_flag_to_be_equal_to = None
+       convert_to_non_anomalous_if_ratio_pairs_lone_less_than_threshold = 0.5
+       r_free_flags {
+         file_name = None
+         label = None
+         test_flag_value = None
+         ignore_r_free_flags = False
+         disable_suitability_test = False
+         ignore_pdb_hexdigest = False
+         generate = False
+         fraction = 0.1
+         max_free = 2000
+         lattice_symmetry_max_delta = 5
+         use_lattice_symmetry = True
+         use_dataman_shells = False
+         n_shells = 20
+       }
+     }
+     pdb {
+       file_name = None
+     }
+     monomers {
+       file_name = None
+     }
+     maps {
+       map_file_name = None
+       d_min = None
+       map_coefficients_file_name = None
+       map_coefficients_label = None
+     }
+     sequence = None
+     scattering_table = wk1995 it1992 *n_gaussian neutron electron
+     wavelength = None
+     energy = None
+     twin_law = Auto
+   }
+   max_atoms = 15000
+   debug = False
+   cluster {
+     charge_cutoff = 8.0
+     clustering = true
+     charge_embedding = False
+     two_buffers = False
+     maxnum_residues_in_cluster = 15
+     clustering_method = gnc *bcc
+     altloc_method = *average subtract
+     g_scan = 10 15 20
+     g_ref = None
+     g_mode = None
+   }
+   restraints = cctbx *qm
+   quantum {
+     engine_name = mopac ani torchani terachem turbomole pyscf orca gaussian \
+                   *xtb
+     charge = None
+     basis = Auto
+     method = Auto
+     memory = None
+     nproc = 2
+     qm_addon = gcp dftd3 gcp-d3
+     qm_addon_method = None
+   }
+   refine {
+     dry_run = False
+     sf_algorithm = *direct fft
+     refinement_target_name = *ml ls_wunit_k1
+     mode = opt *refine gtest
+     number_of_macro_cycles = 1
+     number_of_weight_search_cycles = 50
+     number_of_refine_cycles = 8
+     number_of_micro_cycles = 50
+     data_weight = 1
+     choose_best_use_r_work = False
+     skip_weight_search = false
+     adjust_restraints_weight_scale_value = 2
+     max_iterations_weight = 50
+     max_iterations_refine = 250
+     use_ase_lbfgs = False
+     line_search = True
+     stpmax = 0.5
+     gradient_only = true
+     update_all_scales = True
+     refine_sites = True
+     refine_adp = False
+     restraints_weight_scale = 1.0
+     shake_sites = False
+     use_convergence_test = True
+     max_bond_rmsd = 0.005
+     max_r_work_r_free_gap = 5.0
+     r_tolerance = 0.001
+     rmsd_tolerance = 0.01
+     opt_log = False
+     pre_opt = False
+     pre_opt_stpmax = 0.1
+     pre_opt_iter = 10
+     pre_opt_switch = 2
+     pre_opt_gconv = 3000
+   }
+   parallel {
+     method = *multiprocessing slurm pbs sge lsf threading
+     nproc = 32
+     qsub_command = None
+   }
+   output_file_name_prefix = None
+   output_folder_name = "pdb"
+   shared_disk = True
+   rst_file = None
+   dump_gradients = None
+  Default method for xtb is  --gfn 2 --etemp 500 --acc 0.1 --gbsa h2o
+ params.gradient_only True
+
+***********************************************************
+restart info will be stored in /home/lum/3a5x/refine3_normalize_search_250_0.5/pdb/placed_model_complete.rst.pickle
+***********************************************************
+
+
+GEOMETRY RESTRAINTS LIBRARY: GEOSTD + MONOMER LIBRARY
+DEVIATIONS FROM IDEAL VALUES.
+  BOND      :  0.013   0.077   3639
+  ANGLE     :  1.530  10.866   4942
+  CHIRALITY :  0.119   0.381    608
+  PLANARITY :  0.010   0.036    660
+  DIHEDRAL  : 15.980 178.086   2217
+  MIN NONBONDED DISTANCE : 2.382
+
+MOLPROBITY STATISTICS.
+  ALL-ATOM CLASHSCORE : 17.79
+  RAMACHANDRAN PLOT:
+    OUTLIERS :  2.85 %
+    ALLOWED  : 10.57 %
+    FAVORED  : 86.59 %
+  ROTAMER OUTLIERS :  8.72 %
+  CBETA DEVIATIONS :  0.00 %
+  PEPTIDE PLANE:
+    CIS-PROLINE     : 0.00 %
+    CIS-GENERAL     : 0.00 %
+    TWISTED PROLINE : 0.00 %
+    TWISTED GENERAL : 0.00 %
+Resolution of map is: 3.7274
+Map-model correlation coefficient (CC)
+  CC_mask  : 0.2920
+  CC_volume: 0.4394
+  CC_peaks : 0.5994
+  CC_box   : 0.5983
+-------------------------------------------------------------------------------
+Initial weight: 1.0 bond rmsd:  0.013
+  start: bond:  0.013 angle:   1.53 clash:  17.8 rota:  8.72 rama_f:  86.59 rama_o:   2.85 cb:   0.00  0.013
+-------------------------------------------------------------------------------
+Trying weight:   1.0000, bond rmsd:  0.013
+  before: bond:  0.013 angle:   1.53 clash:  17.8 rota:  8.72 rama_f:  86.59 rama_o:   2.85 cb:   0.00  0.013
+  after : bond:  0.010 angle:   1.74 clash:   2.8 rota:  3.33 rama_f:  92.89 rama_o:   1.02 cb:   0.00  0.010
+Resolution of map is: 3.7274
+Map-model correlation coefficient (CC)
+  CC_mask  : 0.3387
+  CC_volume: 0.4669
+  CC_peaks : 0.6301
+  CC_box   : 0.6287
+  New weight to try:   0.5000
+-------------------------------------------------------------------------------
+Trying weight:   0.5000, bond rmsd:  0.010
+  before: bond:  0.013 angle:   1.53 clash:  17.8 rota:  8.72 rama_f:  86.59 rama_o:   2.85 cb:   0.00  0.010
+  after : bond:  0.010 angle:   1.72 clash:   2.9 rota:  3.08 rama_f:  93.29 rama_o:   0.61 cb:   0.00  0.010
+Resolution of map is: 3.7274
+Map-model correlation coefficient (CC)
+  CC_mask  : 0.3213
+  CC_volume: 0.4560
+  CC_peaks : 0.6191
+  CC_box   : 0.6178
+  New weight to try:   0.2500
+-------------------------------------------------------------------------------
+Trying weight:   0.2500, bond rmsd:  0.010
+  before: bond:  0.013 angle:   1.53 clash:  17.8 rota:  8.72 rama_f:  86.59 rama_o:   2.85 cb:   0.00  0.010
+  after : bond:  0.010 angle:   1.71 clash:   2.8 rota:  3.85 rama_f:  94.11 rama_o:   0.61 cb:   0.00  0.010
+Resolution of map is: 3.7274
+Map-model correlation coefficient (CC)
+  CC_mask  : 0.3123
+  CC_volume: 0.4504
+  CC_peaks : 0.6127
+  CC_box   : 0.6114
+  New weight to try:   0.1250
+-------------------------------------------------------------------------------
+Trying weight:   0.1250, bond rmsd:  0.010
+  before: bond:  0.013 angle:   1.53 clash:  17.8 rota:  8.72 rama_f:  86.59 rama_o:   2.85 cb:   0.00  0.010
+  after : bond:  0.010 angle:   1.70 clash:   2.5 rota:  3.85 rama_f:  94.11 rama_o:   1.02 cb:   0.00  0.010
+Resolution of map is: 3.7274
+Map-model correlation coefficient (CC)
+  CC_mask  : 0.3078
+  CC_volume: 0.4465
+  CC_peaks : 0.6094
+  CC_box   : 0.6082
+  New weight to try:   0.0625
+-------------------------------------------------------------------------------
+Trying weight:   0.0625, bond rmsd:  0.010
+  before: bond:  0.013 angle:   1.53 clash:  17.8 rota:  8.72 rama_f:  86.59 rama_o:   2.85 cb:   0.00  0.010
+  after : bond:  0.010 angle:   1.70 clash:   2.5 rota:  4.10 rama_f:  94.31 rama_o:   1.02 cb:   0.00  0.010
+Resolution of map is: 3.7274
+Map-model correlation coefficient (CC)
+  CC_mask  : 0.3057
+  CC_volume: 0.4454
+  CC_peaks : 0.6081
+  CC_box   : 0.6069
+  New weight to try:   0.0312
+-------------------------------------------------------------------------------
+Trying weight:   0.0312, bond rmsd:  0.010
+  before: bond:  0.013 angle:   1.53 clash:  17.8 rota:  8.72 rama_f:  86.59 rama_o:   2.85 cb:   0.00  0.010
+  after : bond:  0.010 angle:   1.70 clash:   2.6 rota:  3.85 rama_f:  94.11 rama_o:   1.02 cb:   0.00  0.010
+Resolution of map is: 3.7274
+Map-model correlation coefficient (CC)
+  CC_mask  : 0.3045
+  CC_volume: 0.4446
+  CC_peaks : 0.6072
+  CC_box   : 0.6060
+  New weight to try:   0.0156
+-------------------------------------------------------------------------------
+Trying weight:   0.0156, bond rmsd:  0.010
+  before: bond:  0.013 angle:   1.53 clash:  17.8 rota:  8.72 rama_f:  86.59 rama_o:   2.85 cb:   0.00  0.010
+  after : bond:  0.010 angle:   1.71 clash:   3.1 rota:  4.36 rama_f:  93.90 rama_o:   0.61 cb:   0.00  0.010
+Resolution of map is: 3.7274
+Map-model correlation coefficient (CC)
+  CC_mask  : 0.3026
+  CC_volume: 0.4444
+  CC_peaks : 0.6067
+  CC_box   : 0.6055
+  New weight to try:   0.0078
+-------------------------------------------------------------------------------
+Trying weight:   0.0078, bond rmsd:  0.010
+  before: bond:  0.013 angle:   1.53 clash:  17.8 rota:  8.72 rama_f:  86.59 rama_o:   2.85 cb:   0.00  0.010
+  after : bond:  0.010 angle:   1.70 clash:   2.6 rota:  4.36 rama_f:  93.90 rama_o:   0.81 cb:   0.00  0.010
+Resolution of map is: 3.7274
+Map-model correlation coefficient (CC)
+  CC_mask  : 0.3028
+  CC_volume: 0.4442
+  CC_peaks : 0.6065
+  CC_box   : 0.6053
+  New weight to try:   0.0039
+-------------------------------------------------------------------------------
+Trying weight:   0.0039, bond rmsd:  0.010
+  before: bond:  0.013 angle:   1.53 clash:  17.8 rota:  8.72 rama_f:  86.59 rama_o:   2.85 cb:   0.00  0.010
+  after : bond:  0.010 angle:   1.70 clash:   2.6 rota:  4.36 rama_f:  94.11 rama_o:   0.61 cb:   0.00  0.010
+Resolution of map is: 3.7274
+Map-model correlation coefficient (CC)
+  CC_mask  : 0.3026
+  CC_volume: 0.4440
+  CC_peaks : 0.6065
+  CC_box   : 0.6053
+  New weight to try:   0.0020
+-------------------------------------------------------------------------------
+Trying weight:   0.0020, bond rmsd:  0.010
+  before: bond:  0.013 angle:   1.53 clash:  17.8 rota:  8.72 rama_f:  86.59 rama_o:   2.85 cb:   0.00  0.010
