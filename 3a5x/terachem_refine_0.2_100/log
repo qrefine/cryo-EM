@@ -193,3 +193,11 @@ Map-model correlation coefficient (CC)
   CC_box   : 0.6052
 start refine cycle:  3
   before: bond:  0.014 angle:   1.68 clash:   2.2 rota:  4.87 rama_f:  96.54 rama_o:   0.00 cb:   0.00  0.014
+  after : bond:  0.014 angle:   1.63 clash:   1.5 rota:  4.62 rama_f:  96.75 rama_o:   0.00 cb:   0.00  0.014
+Resolution of map is: 3.7274
+Map-model correlation coefficient (CC)
+  CC_mask  : 0.3051
+  CC_volume: 0.4457
+  CC_peaks : 0.6067
+  CC_box   : 0.6055
+
