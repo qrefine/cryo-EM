@@ -1,0 +1,2 @@
+nohup qr.refine 5ly6_box_complete.pdb 5ly6_box.ccp4  mode=refine restraints=qm engine_name=xtb clustering=true max_bond_rmsd=0.001 quantum.nproc=2 parallel.nproc=36 gradient_only=true stpmax=0.3 max_iterations_refine=300 skip_weight_search=false number_of_refine_cycles=20 > log 2>&1 &
+
