@@ -12,7 +12,7 @@ method         | bond   | angle |clashscore |rama_outlier| rama_favor|rotamer | 
 initial        | 0.004  | 1.007 |   50.84   |   4.49     |   85.39   | 5.48   | 0.6747
 cctbx_refine   | 0.002  | 0.5   |   4.18    |   0        |   96.63   | 5.48   | 0.6711
 xtb_refine     | 0.011  | 1.67  |   3.5     |   0        |   91.01   | 4.11   | 0.6530
-terachem_refine| 0.015  | 1.639 |   2.09    |   0        |   98.88   | 4.11   | 0.6732
+terachem_refine| 0.013  | 1.535 |   0.70    |   0        |   100.00  | 1.37   | 0.6386
 ## 5fn5_chain_c(3787 atoms)
 method         | bond   | angle |clashscore |rama_outlier| rama_favor|rotamer | CC_mask
 :--:           | :--:   | :--:  |   :--:    |   :--:     |   :--:    |:--:    |:--:
