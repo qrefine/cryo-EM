@@ -1,0 +1,235 @@
+Startfile from command line: /home/lum/6i5a/ase/2/2_capping.sp
+
+
+       ***********************************************************
+       *                    TeraChem v1.93P                      *
+       *                 Hg Version: 79b87f121f2d                *
+       *                   Production Version                    *
+       *                Compiled without textures                *
+       *           Chemistry at the Speed of Graphics!           *
+       ***********************************************************
+       * This program may only be used in connection with        *
+       * a valid license from PetaChem, LLC. Use of this program *
+       * or results thereof indicates acceptance of all terms    *
+       * and conditions stated in the license and that a valid   *
+       * license agreement between the user and PetaChem, LLC    *
+       * exists. PetaChem, LLC does not warrant the correctness  *
+       * of results or their suitability for any purpose.        *
+       * Please email bugs, suggestions, and comments to         *
+       *                  help@petachem.com                      *
+       *                                                         *
+       ***********************************************************
+
+
+       ***********************************************************
+       *  Compiled by toddmtz      Wed Aug 16 03:32:31 PDT 2017  *
+       *  Supported architectures: sm_20 sm_30 sm_50 sm_60       *
+       *  Cuda compilation tools, release 8.0, V8.0.44           *
+       ***********************************************************
+
+
+ Job started   Wed May  1 15:41:28 2019
+ On cu31 (available memory: 49959 MB)
+
+######################################### RUNTIME INFO ##########################################
+/public/qmsoft/TeraChem/bin/terachem /home/lum/6i5a/ase/2/2_capping.sp 
+
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  396.26  Mon Apr 30 18:01:39 PDT 2018
+GCC version:  gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) 
+
+	linux-vdso.so.1 (0x00007fff3b998000)
+	libcurl.so.4 => /lib64/libcurl.so.4 (0x00002ad9339cd000)
+	libintbox.so.1 => /public/qmsoft/TeraChem/lib/libintbox.so.1 (0x00002ad933c36000)
+	libthcbox.so.1 => /public/qmsoft/TeraChem/lib/libthcbox.so.1 (0x00002ad953844000)
+	libgridbox.so.1 => /public/qmsoft/TeraChem/lib/libgridbox.so.1 (0x00002ad9553ae000)
+	libdftbox.so.1 => /public/qmsoft/TeraChem/lib/libdftbox.so.1 (0x00002ad95589f000)
+	libcublas.so.8.0 => /public/qmsoft/TeraChem/lib/libcublas.so.8.0 (0x00002ad955bb0000)
+	libcufft.so.8.0 => /public/qmsoft/TeraChem/lib/libcufft.so.8.0 (0x00002ad958560000)
+	libcuda.so.1 => /public/qmsoft/TeraChem/lib/libcuda.so.1 (0x00002ad9613ae000)
+	libcudart.so.8.0 => /public/qmsoft/TeraChem/lib/libcudart.so.8.0 (0x00002ad96232e000)
+	libcrypto.so.10 => /lib64/libcrypto.so.10 (0x00002ad962594000)
+	libssl.so.10 => /lib64/libssl.so.10 (0x00002ad9629f5000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002ad962c67000)
+	libcilkrts.so.5 => /public/qmsoft/TeraChem/lib/libcilkrts.so.5 (0x00002ad962f69000)
+	libstdc++.so.6 => /lib64/libstdc++.so.6 (0x00002ad9631aa000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00002ad9634b1000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00002ad9636c7000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002ad9638e5000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002ad963ae9000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002ad9337aa000)
+	libidn.so.11 => /lib64/libidn.so.11 (0x00002ad963e96000)
+	libssh2.so.1 => /lib64/libssh2.so.1 (0x00002ad9640c9000)
+	libssl3.so => /lib64/libssl3.so (0x00002ad9642f3000)
+	libsmime3.so => /lib64/libsmime3.so (0x00002ad964545000)
+	libnss3.so => /lib64/libnss3.so (0x00002ad96476c000)
+	libnssutil3.so => /lib64/libnssutil3.so (0x00002ad964a99000)
+	libplds4.so => /lib64/libplds4.so (0x00002ad964cc8000)
+	libplc4.so => /lib64/libplc4.so (0x00002ad964ecc000)
+	libnspr4.so => /lib64/libnspr4.so (0x00002ad9650d1000)
+	libgssapi_krb5.so.2 => /lib64/libgssapi_krb5.so.2 (0x00002ad96530f000)
+	libkrb5.so.3 => /lib64/libkrb5.so.3 (0x00002ad96555c000)
+	libk5crypto.so.3 => /lib64/libk5crypto.so.3 (0x00002ad965844000)
+	libcom_err.so.2 => /lib64/libcom_err.so.2 (0x00002ad965a77000)
+	liblber-2.4.so.2 => /lib64/liblber-2.4.so.2 (0x00002ad965c7b000)
+	libldap-2.4.so.2 => /lib64/libldap-2.4.so.2 (0x00002ad965e8a000)
+	libz.so.1 => /lib64/libz.so.1 (0x00002ad9660dd000)
+	librt.so.1 => /lib64/librt.so.1 (0x00002ad9662f3000)
+	libnvidia-fatbinaryloader.so.396.26 => /lib64/libnvidia-fatbinaryloader.so.396.26 (0x00002ad9664fb000)
+	libkrb5support.so.0 => /lib64/libkrb5support.so.0 (0x00002ad966747000)
+	libkeyutils.so.1 => /lib64/libkeyutils.so.1 (0x00002ad966955000)
+	libresolv.so.2 => /lib64/libresolv.so.2 (0x00002ad966b59000)
+	libsasl2.so.3 => /lib64/libsasl2.so.3 (0x00002ad966d70000)
+	libselinux.so.1 => /lib64/libselinux.so.1 (0x00002ad966f8d000)
+	libcrypt.so.1 => /lib64/libcrypt.so.1 (0x00002ad9671b4000)
+	libpcre.so.1 => /lib64/libpcre.so.1 (0x00002ad9673eb000)
+#################################################################################################
+
+       ********************** License Check **********************
+       * Use license from: /public/qmsoft/TeraChem/license.dat
+       * Available Host id: AC1F6B20BA08
+       * Available Host id: AC1F6B20BA09
+       * Available Host id: 5254003CDB46
+       * Available Host id: 5254003CDB46
+       * License Host id: AC1F6B20BA08
+       * License expires: 2019-10-21
+       ********************** License OK *************************
+Scratch directory: /tmp/lum/6i5a/ase/2/scr
+Random number seed: 1808385106
+
+XYZ coordinates /home/lum/6i5a/ase/2/2_capping.xyz
+Molden File Output: /tmp/lum/6i5a/ase/2/scr/2_capping.molden
+Using basis set: 6-31g
+Spin multiplicity: 1
+DIIS will use up to 10 vectors.
+WF convergence threshold: 3.00e-05
+Using DIIS algorithm to converge WF
+Maximum number of SCF iterations: 500
+Incremental fock with rebuild every 8 iterations
+Will switch to conventional Fock if diffuse functions are detected
+X-matrix tolerance: 1.00e-04
+PRECISION: DYNAMIC
+DFT Functional requested: hf
+Method: Hartree-Fock 
+Wavefunction: RESTRICTED
+Initial guess generated by maximum overlap
+
+********************************************
+**** SINGLE POINT GRADIENT CALCULATIONS ****
+********************************************
+SCF:   Initial guess is taken from previous step
+COSMO model for polarizable continuum model enabled
+
+using 4 out of 4 CUDA devices
+   Device 0:  GeForce GTX 1080 Ti, 11178MB, CC 6.1 -- CPU THREAD 0
+   Device 1:  GeForce GTX 1080 Ti, 11178MB, CC 6.1 -- CPU THREAD 1
+   Device 2:  GeForce GTX 1080 Ti, 11178MB, CC 6.1 -- CPU THREAD 2
+   Device 3:  GeForce GTX 1080 Ti, 11178MB, CC 6.1 -- CPU THREAD 3
+-------------------------------------------------------------------
+Compiled with MAGMA support.  MAGMA parameters:
+    Matrices larger than 5000 square will be treated with MAGMA
+       (Change by setting the MagmaMinN environment variable)
+    Magma will use 1 out of 4 GPUs
+       (Change by setting the MagmaNGPUs environment variable)
+-------------------------------------------------------------------
+ CPU Memory Available: 8018.12 MegaWords 
+ GPU Memory Available: 1141.31 MegaWords 
+ Maximum recommended basis set size: 12200 basis functions
+ (limited by GPU memory)
+-------------------------------------------------------------------
+Not using d-functions. Configuring GPUs accordingly.
+0: CUBLAS initialized, available GPU memory: 8346MB
+1: CUBLAS initialized, available GPU memory: 8346MB
+2: CUBLAS initialized, available GPU memory: 8342MB
+3: CUBLAS initialized, available GPU memory: 8170MB
+
+
+Basis set:       6-31g
+Total atoms:     439
+Total charge:    1
+Total electrons: 1622 (811-alpha, 811-beta)
+Number electrons modeled by ECPs: 0
+Total orbitals:  2390
+Total AO shells: 1526 (1094 S-shells; 432 P-shells; 0 D-shells; 0 F-shells; 0 G-shells)
+Spin multiplicity: 1
+Nuclear repulsion energy (QM atoms): 82271.323447089322 a.u.
+
+=COSMO= Number of H atoms in QM atoms:223
+=COSMO= Number of Heavy atoms in QM atoms:216
+reached first line of InitCosmoSwigNoMatrix
+q is allocated
+B is allocated
+Bz is allocated
+z is allocated
+c is allocated
+=COSMO= No Matrix Cosmo Initialization finished.
+Error: signal 11:
+Error: signal 11:
+/public/qmsoft/TeraChem/bin/terachem(_Z11SegvHandleri+0x17)[0x64baf7]
+/public/qmsoft/TeraChem/bin/terachem(_Z11SegvHandleri+0x17)[0x64baf7]
+/lib64/libc.so.6(+0x353a0)[0x2abd991853a0]
+/lib64/libc.so.6(+0x37d4d)[0x2abd99187d4d]
+/lib64/libc.so.6(+0x37e35)[0x2abd99187e35]
+/public/qmsoft/TeraChem/bin/terachem[0x744fae]
+/lib64/libc.so.6(+0x353a0)[0x2abd991853a0]
+linux-vdso.so.1(clock_gettime+0xc2)[0x7ffe985f87c2]
+/lib64/libc.so.6(__clock_gettime+0x1d)[0x2abd99243e5d]
+/public/qmsoft/TeraChem/lib/libcuda.so.1(+0x20294e)[0x2abd96c1794e]
+/public/qmsoft/TeraChem/lib/libcuda.so.1(+0x2975f3)[0x2abd96cac5f3]
+/lib64/libc.so.6(+0x353a0)[0x2abd991853a0]
+=COSMO= ++++++++++++++++++++++++++++++ COSMO parameters ++++++++++++++++++++++++++++++
+=COSMO= I. Cavity Information:
+=COSMO= SAS(Solvent accesible surface) initialization finished
+=COSMO= Time for initializing Molecular Surface:0.55571198 (sec)
+=COSMO= Time for initializing cosmo calculation:0.19748399 (sec)
+=COSMO= Cavity effective radius(Angstrom) (r_solv+r_vdw-dsc) was written into /tmp/lum/6i5a/ase/2/scr/ratom.txt
+=COSMO= Solvent Dielectric Constant:78.390000
+=COSMO= Cosmo Solvent radius:0.000000
+=COSMO= Cosmo charge scaling method:0
+=COSMO= Cavity built with Lebedev Grid
+=COSMO= Grid points/QM Hydrogen: 110
+=COSMO= Grid points/QM Heavy atom: 110
+=COSMO= Herbert Switching-Gaussian method turned on
+=COSMO= After removing points inside of SAS:
+=COSMO= Total number of segments on molecular surface:23466
+=COSMO= Number of segments belonging to QM atoms:23466
+=COSMO= Total surface area of cavity: 3051.0973(Angstrom^2)
+=COSMO= Total volume of cavity: 1753.5895 (Angstrom^3)
+=COSMO= II. COSMO integral options:
+=COSMO= Building COMSO c vector with original algorithm
+=COSMO= COSMO one-electron integral threshold: 1e-12 
+=COSMO= III. Linear solver options:
+=COSMO= Initialize COSMO for A matrix in no matrix storage form
+=COSMO= CG precondtioner:Jacobi
+=COSMO= Tight CG convergence threshold:1e-06
+=COSMO= CG dynamic threshold: on
+=COSMO= Adjust CG convergence threshold dynamically
+=COSMO= IV. PCM field read/write options:
+=COSMO= PCM field is not written to files
+=COSMO= No PCM field file is read in
+=COSMO= ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy              E_PCM      Time(s)
+---------------------------------------------------------------------------------------
+         >>> Purifying P... IDMP = 3.22e-14 <<<
+THRESPDP set to 1.00e+00
+
+ Job finished: Wed May  1 15:41:46 2019
+
+Error detected at line 64 in intbox/src/kfock/kfockpairs.h
+CUDA error: driver shutting down
+Terminated: Wed May  1 15:41:46 2019
+
+Error detected at line 168 in intbox/src/kfock/kfockpairs.h
+CUDA error: driver shutting down
+Terminated: Wed May  1 15:41:46 2019
+
+/lib64/libc.so.6(+0x37d4d)[0x2abd99187d4d]
+/lib64/libc.so.6(+0x37e35)[0x2abd99187e35]
+/public/qmsoft/TeraChem/lib/libintbox.so.1(+0x3be765)[0x2abd6965b765]
+/public/qmsoft/TeraChem/lib/libcilkrts.so.5(+0xf867)[0x2abd985df867]
+/public/qmsoft/TeraChem/lib/libcilkrts.so.5(+0xf520)[0x2abd985df520]
+/public/qmsoft/TeraChem/lib/libcilkrts.so.5(+0xf115)[0x2abd985df115]
+/public/qmsoft/TeraChem/lib/libintbox.so.1(+0x371c9b)[0x2abd6960ec9b]
+/public/qmsoft/TeraChem/lib/libintbox.so.1(+0x36be90)[0x2abd69608e90]

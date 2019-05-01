@@ -1,0 +1,994 @@
+Startfile from command line: /home/lum/6i5a/ase/4/4_capping.sp
+
+
+       ***********************************************************
+       *                    TeraChem v1.93P                      *
+       *                 Hg Version: 79b87f121f2d                *
+       *                   Production Version                    *
+       *                Compiled without textures                *
+       *           Chemistry at the Speed of Graphics!           *
+       ***********************************************************
+       * This program may only be used in connection with        *
+       * a valid license from PetaChem, LLC. Use of this program *
+       * or results thereof indicates acceptance of all terms    *
+       * and conditions stated in the license and that a valid   *
+       * license agreement between the user and PetaChem, LLC    *
+       * exists. PetaChem, LLC does not warrant the correctness  *
+       * of results or their suitability for any purpose.        *
+       * Please email bugs, suggestions, and comments to         *
+       *                  help@petachem.com                      *
+       *                                                         *
+       ***********************************************************
+
+
+       ***********************************************************
+       *  Compiled by toddmtz      Wed Aug 16 03:32:31 PDT 2017  *
+       *  Supported architectures: sm_20 sm_30 sm_50 sm_60       *
+       *  Cuda compilation tools, release 8.0, V8.0.44           *
+       ***********************************************************
+
+
+ Job started   Wed May  1 15:36:13 2019
+ On cu34 (available memory: 57553 MB)
+
+######################################### RUNTIME INFO ##########################################
+/public/qmsoft/TeraChem/bin/terachem /home/lum/6i5a/ase/4/4_capping.sp 
+
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  396.26  Mon Apr 30 18:01:39 PDT 2018
+GCC version:  gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) 
+
+	linux-vdso.so.1 (0x00007ffc27fb1000)
+	libcurl.so.4 => /lib64/libcurl.so.4 (0x00002b6b2d465000)
+	libintbox.so.1 => /public/qmsoft/TeraChem/lib/libintbox.so.1 (0x00002b6b2d6cd000)
+	libthcbox.so.1 => /public/qmsoft/TeraChem/lib/libthcbox.so.1 (0x00002b6b4d2db000)
+	libgridbox.so.1 => /public/qmsoft/TeraChem/lib/libgridbox.so.1 (0x00002b6b4ee45000)
+	libdftbox.so.1 => /public/qmsoft/TeraChem/lib/libdftbox.so.1 (0x00002b6b4f336000)
+	libcublas.so.8.0 => /public/qmsoft/TeraChem/lib/libcublas.so.8.0 (0x00002b6b4f647000)
+	libcufft.so.8.0 => /public/qmsoft/TeraChem/lib/libcufft.so.8.0 (0x00002b6b51ff7000)
+	libcuda.so.1 => /public/qmsoft/TeraChem/lib/libcuda.so.1 (0x00002b6b5ae45000)
+	libcudart.so.8.0 => /public/qmsoft/TeraChem/lib/libcudart.so.8.0 (0x00002b6b5bdc5000)
+	libcrypto.so.10 => /lib64/libcrypto.so.10 (0x00002b6b5c02b000)
+	libssl.so.10 => /lib64/libssl.so.10 (0x00002b6b5c412000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002b6b5c67f000)
+	libcilkrts.so.5 => /public/qmsoft/TeraChem/lib/libcilkrts.so.5 (0x00002b6b5c981000)
+	libstdc++.so.6 => /lib64/libstdc++.so.6 (0x00002b6b5cbc2000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00002b6b5ceca000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00002b6b5d0e0000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002b6b5d2fe000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002b6b5d502000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002b6b2d242000)
+	libidn.so.11 => /lib64/libidn.so.11 (0x00002b6b5d8af000)
+	libssh2.so.1 => /lib64/libssh2.so.1 (0x00002b6b5dae2000)
+	libssl3.so => /lib64/libssl3.so (0x00002b6b5dd0c000)
+	libsmime3.so => /lib64/libsmime3.so (0x00002b6b5df4e000)
+	libnss3.so => /lib64/libnss3.so (0x00002b6b5e175000)
+	libnssutil3.so => /lib64/libnssutil3.so (0x00002b6b5e49b000)
+	libplds4.so => /lib64/libplds4.so (0x00002b6b5e6c7000)
+	libplc4.so => /lib64/libplc4.so (0x00002b6b5e8cb000)
+	libnspr4.so => /lib64/libnspr4.so (0x00002b6b5ead0000)
+	libgssapi_krb5.so.2 => /lib64/libgssapi_krb5.so.2 (0x00002b6b5ed0e000)
+	libkrb5.so.3 => /lib64/libkrb5.so.3 (0x00002b6b5ef5a000)
+	libk5crypto.so.3 => /lib64/libk5crypto.so.3 (0x00002b6b5f23f000)
+	libcom_err.so.2 => /lib64/libcom_err.so.2 (0x00002b6b5f471000)
+	liblber-2.4.so.2 => /lib64/liblber-2.4.so.2 (0x00002b6b5f675000)
+	libldap-2.4.so.2 => /lib64/libldap-2.4.so.2 (0x00002b6b5f884000)
+	libz.so.1 => /lib64/libz.so.1 (0x00002b6b5fad7000)
+	librt.so.1 => /lib64/librt.so.1 (0x00002b6b5fced000)
+	libnvidia-fatbinaryloader.so.396.26 => /lib64/libnvidia-fatbinaryloader.so.396.26 (0x00002b6b5fef5000)
+	libkrb5support.so.0 => /lib64/libkrb5support.so.0 (0x00002b6b60141000)
+	libkeyutils.so.1 => /lib64/libkeyutils.so.1 (0x00002b6b60350000)
+	libresolv.so.2 => /lib64/libresolv.so.2 (0x00002b6b60554000)
+	libsasl2.so.3 => /lib64/libsasl2.so.3 (0x00002b6b6076b000)
+	libselinux.so.1 => /lib64/libselinux.so.1 (0x00002b6b60988000)
+	libcrypt.so.1 => /lib64/libcrypt.so.1 (0x00002b6b60bad000)
+	libpcre.so.1 => /lib64/libpcre.so.1 (0x00002b6b60de4000)
+	liblzma.so.5 => /lib64/liblzma.so.5 (0x00002b6b61045000)
+#################################################################################################
+
+       ********************** License Check **********************
+       * Use license from: /public/qmsoft/TeraChem/license.dat
+       * Available Host id: AC1F6B20BAE2
+       * Available Host id: AC1F6B20BAE3
+       * Available Host id: 52540093B9B0
+       * Available Host id: 52540093B9B0
+       * License Host id: AC1F6B20BAE2
+       * License expires: 2019-10-21
+       ********************** License OK *************************
+Scratch directory: /tmp/lum/6i5a/ase/4/scr
+Random number seed: 1572790067
+
+XYZ coordinates /home/lum/6i5a/ase/4/4_capping.xyz
+Molden File Output: /tmp/lum/6i5a/ase/4/scr/4_capping.molden
+Using basis set: 6-31g
+Spin multiplicity: 1
+DIIS will use up to 10 vectors.
+WF convergence threshold: 3.00e-05
+Using DIIS algorithm to converge WF
+Maximum number of SCF iterations: 500
+Incremental fock with rebuild every 8 iterations
+Will switch to conventional Fock if diffuse functions are detected
+X-matrix tolerance: 1.00e-04
+PRECISION: DYNAMIC
+DFT Functional requested: hf
+Method: Hartree-Fock 
+Wavefunction: RESTRICTED
+Initial guess generated by maximum overlap
+
+********************************************
+**** SINGLE POINT GRADIENT CALCULATIONS ****
+********************************************
+SCF:   Initial guess is taken from previous step
+COSMO model for polarizable continuum model enabled
+
+using 4 out of 4 CUDA devices
+   Device 0:  GeForce GTX 1080 Ti, 11178MB, CC 6.1 -- CPU THREAD 0
+   Device 1:  GeForce GTX 1080 Ti, 11178MB, CC 6.1 -- CPU THREAD 1
+   Device 2:  GeForce GTX 1080 Ti, 11178MB, CC 6.1 -- CPU THREAD 2
+   Device 3:  GeForce GTX 1080 Ti, 11178MB, CC 6.1 -- CPU THREAD 3
+-------------------------------------------------------------------
+Compiled with MAGMA support.  MAGMA parameters:
+    Matrices larger than 5000 square will be treated with MAGMA
+       (Change by setting the MagmaMinN environment variable)
+    Magma will use 1 out of 4 GPUs
+       (Change by setting the MagmaNGPUs environment variable)
+-------------------------------------------------------------------
+ CPU Memory Available: 8018.12 MegaWords 
+ GPU Memory Available: 1141.31 MegaWords 
+ Maximum recommended basis set size: 12200 basis functions
+ (limited by GPU memory)
+-------------------------------------------------------------------
+Not using d-functions. Configuring GPUs accordingly.
+0: CUBLAS initialized, available GPU memory: 8170MB
+1: CUBLAS initialized, available GPU memory: 8352MB
+2: CUBLAS initialized, available GPU memory: 8350MB
+3: CUBLAS initialized, available GPU memory: 8348MB
+
+
+Basis set:       6-31g
+Total atoms:     511
+Total charge:    0
+Total electrons: 1928 (964-alpha, 964-beta)
+Number electrons modeled by ECPs: 0
+Total orbitals:  2814
+Total AO shells: 1790 (1278 S-shells; 512 P-shells; 0 D-shells; 0 F-shells; 0 G-shells)
+Spin multiplicity: 1
+Nuclear repulsion energy (QM atoms): 105240.714764291246 a.u.
+
+=COSMO= Number of H atoms in QM atoms:255
+=COSMO= Number of Heavy atoms in QM atoms:256
+reached first line of InitCosmoSwigNoMatrix
+q is allocated
+B is allocated
+Bz is allocated
+z is allocated
+c is allocated
+=COSMO= No Matrix Cosmo Initialization finished.
+Error: signal 11:
+/public/qmsoft/TeraChem/bin/terachem(_Z11SegvHandleri+0x17)[0x64baf7]
+/lib64/libc.so.6(+0x353a0)[0x2ae98f6283a0]
+/public/qmsoft/TeraChem/lib/libcudart.so.8.0(+0x1cc6f)[0x2ae98ded2c6f]
+/public/qmsoft/TeraChem/lib/libcudart.so.8.0(+0x1d2c7)[0x2ae98ded32c7]
+/lib64/libc.so.6(__cxa_finalize+0x8f)[0x2ae98f62b16f]
+/public/qmsoft/TeraChem/lib/libintbox.so.1(+0x14c36)[0x2ae95f7d2c36]
+=COSMO= ++++++++++++++++++++++++++++++ COSMO parameters ++++++++++++++++++++++++++++++
+=COSMO= I. Cavity Information:
+=COSMO= SAS(Solvent accesible surface) initialization finished
+=COSMO= Time for initializing Molecular Surface:0.75105298 (sec)
+=COSMO= Time for initializing cosmo calculation:0.24477200 (sec)
+=COSMO= Cavity effective radius(Angstrom) (r_solv+r_vdw-dsc) was written into /tmp/lum/6i5a/ase/4/scr/ratom.txt
+=COSMO= Solvent Dielectric Constant:78.390000
+=COSMO= Cosmo Solvent radius:0.000000
+=COSMO= Cosmo charge scaling method:0
+=COSMO= Cavity built with Lebedev Grid
+=COSMO= Grid points/QM Hydrogen: 110
+=COSMO= Grid points/QM Heavy atom: 110
+=COSMO= Herbert Switching-Gaussian method turned on
+=COSMO= After removing points inside of SAS:
+=COSMO= Total number of segments on molecular surface:27756
+=COSMO= Number of segments belonging to QM atoms:27756
+=COSMO= Total surface area of cavity: 3698.7599(Angstrom^2)
+=COSMO= Total volume of cavity: 2130.0512 (Angstrom^3)
+=COSMO= II. COSMO integral options:
+=COSMO= Building COMSO c vector with original algorithm
+=COSMO= COSMO one-electron integral threshold: 1e-12 
+=COSMO= III. Linear solver options:
+=COSMO= Initialize COSMO for A matrix in no matrix storage form
+=COSMO= CG precondtioner:Jacobi
+=COSMO= Tight CG convergence threshold:1e-06
+=COSMO= CG dynamic threshold: on
+=COSMO= Adjust CG convergence threshold dynamically
+=COSMO= IV. PCM field read/write options:
+=COSMO= PCM field is not written to files
+=COSMO= No PCM field file is read in
+=COSMO= ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy              E_PCM      Time(s)
+---------------------------------------------------------------------------------------
+         >>> Purifying P... IDMP = 4.69e-14 <<<
+THRESPDP set to 1.00e+00
+
+ Job finished: Wed May  1 15:36:36 2019
+
+Error detected at line 168 in intbox/src/kfock/kfockpairs.h
+CUDA error: driver shutting down
+Terminated: Wed May  1 15:36:36 2019
+
+Error: signal 11:
+*** Error in `/public/qmsoft/TeraChem/bin/terachem': malloc(): memory corruption: 0x00002ae98f99a687 ***
+======= Backtrace: =========
+/public/qmsoft/TeraChem/bin/terachem(_Z11SegvHandleri+0x17)[0x64baf7]
+/lib64/libc.so.6(+0x7344f)[0x2ae98f66644f]
+/lib64/libc.so.6(+0x78cbe)[0x2ae98f66bcbe]
+/lib64/libc.so.6(+0x7a7a9)[0x2ae98f66d7a9]
+/lib64/libc.so.6(__libc_calloc+0xaa)[0x2ae98f66fc0a]
+/public/qmsoft/TeraChem/lib/libcufft.so.8.0(+0x1f78f1)[0x2ae9842df8f1]
+/lib64/libc.so.6(+0x353a0)[0x2ae98f6283a0]
+/lib64/libc.so.6(+0x37d4d)[0x2ae98f62ad4d]
+/lib64/libc.so.6(+0x37e35)[0x2ae98f62ae35]
+/public/qmsoft/TeraChem/lib/libintbox.so.1(_ZN5GpuCx8CheckoutEv+0xd7)[0x2ae95fa977d7]
+/public/qmsoft/TeraChem/lib/libcufft.so.8.0(+0x1f7a07)[0x2ae9842dfa07]
+/public/qmsoft/TeraChem/lib/libintbox.so.1(+0x3d5be5)[0x2ae95fb93be5]
+/lib64/libc.so.6(+0x37de9)[0x2ae98f62ade9]
+/lib64/libc.so.6(+0x37e35)[0x2ae98f62ae35]
+/public/qmsoft/TeraChem/bin/terachem(_Z11SegvHandleri+0x49)[0x64bb29]
+/lib64/libc.so.6(+0x353a0)[0x2ae98f6283a0]
+/public/qmsoft/TeraChem/lib/libcudart.so.8.0(+0x1cc6f)[0x2ae98ded2c6f]
+/public/qmsoft/TeraChem/lib/libcudart.so.8.0(+0x1d2c7)[0x2ae98ded32c7]
+/public/qmsoft/TeraChem/lib/libcilkrts.so.5(+0xf867)[0x2ae98ea81867]
+/public/qmsoft/TeraChem/lib/libcilkrts.so.5(+0xf520)[0x2ae98ea81520]
+/lib64/libc.so.6(__cxa_finalize+0x8f)[0x2ae98f62b16f]
+/public/qmsoft/TeraChem/lib/libintbox.so.1(+0x14c36)[0x2ae95f7d2c36]
+======= Memory map: ========
+/public/qmsoft/TeraChem/lib/libcilkrts.so.5(+0xf7c8)[0x2ae98ea817c8]
+/public/qmsoft/TeraChem/lib/libcilkrts.so.5(+0xf4e4)[0x2ae98ea814e4]
+00400000-03283000 r-xp 00000000 00:2c 287165238                          /public/qmsoft/TeraChem/bin/terachem
+03483000-03745000 rw-p 02e83000 00:2c 287165238                          /public/qmsoft/TeraChem/bin/terachem
+03745000-1950f000 rw-p 00000000 00:00 0 
+19dac000-86377000 rw-p 00000000 00:00 0                                  [heap]
+200000000-200200000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+200200000-200400000 ---p 00000000 00:00 0 
+200400000-200404000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+200404000-200600000 ---p 00000000 00:00 0 
+200600000-200a00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+200a00000-201600000 ---p 00000000 00:00 0 
+201600000-201604000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+201604000-201800000 ---p 00000000 00:00 0 
+201800000-201c00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+201c00000-201c04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+201c04000-201e00000 ---p 00000000 00:00 0 
+201e00000-202200000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+202200000-202204000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+202204000-202400000 ---p 00000000 00:00 0 
+202400000-202800000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+202800000-202804000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+202804000-202a00000 ---p 00000000 00:00 0 
+202a00000-202e00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+202e00000-202e04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+202e04000-203000000 ---p 00000000 00:00 0 
+203000000-203400000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+203400000-203404000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+203404000-203600000 ---p 00000000 00:00 0 
+203600000-203a00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+203a00000-203a04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+203a04000-203c00000 ---p 00000000 00:00 0 
+203c00000-204000000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+204000000-204004000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+204004000-204200000 ---p 00000000 00:00 0 
+204200000-204600000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+204600000-204604000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+204604000-204800000 ---p 00000000 00:00 0 
+204800000-204c00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+204c00000-204c04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+204c04000-204e00000 ---p 00000000 00:00 0 
+204e00000-205200000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+205200000-205204000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+205204000-205400000 ---p 00000000 00:00 0 
+205400000-205800000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+205800000-205804000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+205804000-205a00000 ---p 00000000 00:00 0 
+205a00000-205e00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+205e00000-205e04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+205e04000-206000000 ---p 00000000 00:00 0 
+206000000-206400000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+206400000-206404000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+206404000-206600000 ---p 00000000 00:00 0 
+206600000-206a00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+206a00000-206a04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+206a04000-206c00000 ---p 00000000 00:00 0 
+206c00000-207000000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+207000000-207200000 ---p 00000000 00:00 0 
+207200000-207400000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+207400000-207600000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+207600000-207800000 ---p 00000000 00:00 0 
+207800000-207804000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+207804000-207a00000 ---p 00000000 00:00 0 
+207a00000-207e00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+207e00000-208a00000 ---p 00000000 00:00 0 
+208a00000-208a04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+208a04000-208c00000 ---p 00000000 00:00 0 
+208c00000-209000000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+209000000-209004000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+209004000-209200000 ---p 00000000 00:00 0 
+209200000-209600000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+209600000-209604000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+209604000-209800000 ---p 00000000 00:00 0 
+209800000-209c00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+209c00000-209c04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+209c04000-209e00000 ---p 00000000 00:00 0 
+209e00000-20a200000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20a200000-20a204000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20a204000-20a400000 ---p 00000000 00:00 0 
+20a400000-20a800000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20a800000-20a804000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20a804000-20aa00000 ---p 00000000 00:00 0 
+20aa00000-20ae00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20ae00000-20ae04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20ae04000-20b000000 ---p 00000000 00:00 0 
+20b000000-20b400000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20b400000-20b404000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20b404000-20b600000 ---p 00000000 00:00 0 
+20b600000-20ba00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20ba00000-20ba04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20ba04000-20bc00000 ---p 00000000 00:00 0 
+20bc00000-20c000000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20c000000-20c004000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20c004000-20c200000 ---p 00000000 00:00 0 
+20c200000-20c600000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20c600000-20c604000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20c604000-20c800000 ---p 00000000 00:00 0 
+20c800000-20cc00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20cc00000-20cc04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20cc04000-20ce00000 ---p 00000000 00:00 0 
+20ce00000-20d200000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20d200000-20d204000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20d204000-20d400000 ---p 00000000 00:00 0 
+20d400000-20d800000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20d800000-20d804000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20d804000-20da00000 ---p 00000000 00:00 0 
+20da00000-20de00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20de00000-20de04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20de04000-20e000000 ---p 00000000 00:00 0 
+20e000000-20e400000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20e400000-20e600000 ---p 00000000 00:00 0 
+20e600000-20e800000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20e800000-20ea00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20ea00000-20ec00000 ---p 00000000 00:00 0 
+20ec00000-20ec04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20ec04000-20ee00000 ---p 00000000 00:00 0 
+20ee00000-20f200000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20f200000-20fe00000 ---p 00000000 00:00 0 
+20fe00000-20fe04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+20fe04000-210000000 ---p 00000000 00:00 0 
+210000000-210400000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+210400000-210404000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+210404000-210600000 ---p 00000000 00:00 0 
+210600000-210a00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+210a00000-210a04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+210a04000-210c00000 ---p 00000000 00:00 0 
+210c00000-211000000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+211000000-211004000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+211004000-211200000 ---p 00000000 00:00 0 
+211200000-211600000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+211600000-211604000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+211604000-211800000 ---p 00000000 00:00 0 
+211800000-211c00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+211c00000-211c04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+211c04000-211e00000 ---p 00000000 00:00 0 
+211e00000-212200000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+212200000-212204000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+212204000-212400000 ---p 00000000 00:00 0 
+212400000-212800000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+212800000-212804000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+212804000-212a00000 ---p 00000000 00:00 0 
+212a00000-212e00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+212e00000-212e04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+212e04000-213000000 ---p 00000000 00:00 0 
+213000000-213400000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+213400000-213404000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+213404000-213600000 ---p 00000000 00:00 0 
+213600000-213a00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+213a00000-213a04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+213a04000-213c00000 ---p 00000000 00:00 0 
+213c00000-214000000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+214000000-214004000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+214004000-214200000 ---p 00000000 00:00 0 
+214200000-214600000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+214600000-214604000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+214604000-214800000 ---p 00000000 00:00 0 
+214800000-214c00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+214c00000-214c04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+214c04000-214e00000 ---p 00000000 00:00 0 
+214e00000-215200000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+215200000-215204000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+215204000-215400000 ---p 00000000 00:00 0 
+215400000-215800000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+215800000-215a00000 ---p 00000000 00:00 0 
+215a00000-215c00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+215c00000-215e00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+215e00000-216000000 ---p 00000000 00:00 0 
+216000000-216004000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+216004000-216200000 ---p 00000000 00:00 0 
+216200000-216600000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+216600000-217200000 ---p 00000000 00:00 0 
+217200000-217204000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+217204000-217400000 ---p 00000000 00:00 0 
+217400000-217800000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+217800000-217804000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+217804000-217a00000 ---p 00000000 00:00 0 
+217a00000-217e00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+217e00000-217e04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+217e04000-218000000 ---p 00000000 00:00 0 
+218000000-218400000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+218400000-218404000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+218404000-218600000 ---p 00000000 00:00 0 
+218600000-218a00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+218a00000-218a04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+218a04000-218c00000 ---p 00000000 00:00 0 
+218c00000-219000000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+219000000-219004000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+219004000-219200000 ---p 00000000 00:00 0 
+219200000-219600000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+219600000-219604000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+219604000-219800000 ---p 00000000 00:00 0 
+219800000-219c00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+219c00000-219c04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+219c04000-219e00000 ---p 00000000 00:00 0 
+219e00000-21a200000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+21a200000-21a204000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+21a204000-21a400000 ---p 00000000 00:00 0 
+21a400000-21a800000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+21a800000-21a804000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+21a804000-21aa00000 ---p 00000000 00:00 0 
+21aa00000-21ae00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+21ae00000-21ae04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+21ae04000-21b000000 ---p 00000000 00:00 0 
+21b000000-21b400000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+21b400000-21b404000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+21b404000-21b600000 ---p 00000000 00:00 0 
+21b600000-21ba00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+21ba00000-21ba04000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+21ba04000-21bc00000 ---p 00000000 00:00 0 
+21bc00000-21c000000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+21c000000-21c004000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+21c004000-21c200000 ---p 00000000 00:00 0 
+21c200000-21c600000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+21c600000-21c604000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+21c604000-21c800000 ---p 00000000 00:00 0 
+21c800000-21cc00000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+21cc00000-21ce00000 ---p 00000000 00:00 0 
+21ce00000-21d000000 rw-s 00000000 00:05 43608                            /dev/nvidiactl
+21d000000-600200000 ---p 00000000 00:00 0 
+10000000000-10810000000 ---p 00000000 00:00 0 
+2ae95f333000-2ae95f353000 r-xp 00000000 08:03 6372149                    /usr/lib64/ld-2.18.so
+2ae95f353000-2ae95f375000 rw-p 00000000 00:00 0 
+2ae95f375000-2ae95f376000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f376000-2ae95f377000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f377000-2ae95f378000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f378000-2ae95f379000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f379000-2ae95f37a000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f37a000-2ae95f37b000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f37b000-2ae95f37c000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f37c000-2ae95f37d000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f37d000-2ae95f37e000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f37e000-2ae95f37f000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f37f000-2ae95f380000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f380000-2ae95f381000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f381000-2ae95f382000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f382000-2ae95f383000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f383000-2ae95f384000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f384000-2ae95f385000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f385000-2ae95f386000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f386000-2ae95f387000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f387000-2ae95f388000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f388000-2ae95f389000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f389000-2ae95f508000 rw-p 00000000 00:00 0 
+2ae95f508000-2ae95f509000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f509000-2ae95f50a000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f50a000-2ae95f50b000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f50b000-2ae95f50c000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f50c000-2ae95f50d000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f50d000-2ae95f50e000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f50e000-2ae95f50f000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f50f000-2ae95f510000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f510000-2ae95f511000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f511000-2ae95f512000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f512000-2ae95f513000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f513000-2ae95f514000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f514000-2ae95f515000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f515000-2ae95f516000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f516000-2ae95f517000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f517000-2ae95f518000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f518000-2ae95f519000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f519000-2ae95f51a000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f51a000-2ae95f51b000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f51b000-2ae95f51c000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f51c000-2ae95f51d000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f51d000-2ae95f51e000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f51e000-2ae95f51f000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f51f000-2ae95f520000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f520000-2ae95f521000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f521000-2ae95f522000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f522000-2ae95f523000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f523000-2ae95f524000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f524000-2ae95f525000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f525000-2ae95f526000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f526000-2ae95f527000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f527000-2ae95f528000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f528000-2ae95f529000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f529000-2ae95f52a000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f52a000-2ae95f52b000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f52b000-2ae95f52c000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f52c000-2ae95f52d000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f52d000-2ae95f52e000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f52e000-2ae95f52f000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f52f000-2ae95f530000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f530000-2ae95f531000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f531000-2ae95f532000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f532000-2ae95f533000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f533000-2ae95f534000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae95f534000-2ae95f535000 ---p 00000000 00:00 0 
+2ae95f535000-2ae95f546000 rw-p 00000000 00:00 0 
+2ae95f553000-2ae95f554000 r--p 00020000 08:03 6372149                    /usr/lib64/ld-2.18.so
+2ae95f554000-2ae95f555000 rw-p 00021000 08:03 6372149                    /usr/lib64/ld-2.18.so
+2ae95f555000-2ae95f556000 rw-p 00000000 00:00 0 
+2ae95f556000-2ae95f5ba000 r-xp 00000000 08:03 6307183                    /usr/lib64/libcurl.so.4.3.0
+2ae95f5ba000-2ae95f7ba000 ---p 00064000 08:03 6307183                    /usr/lib64/libcurl.so.4.3.0
+2ae95f7ba000-2ae95f7bc000 r--p 00064000 08:03 6307183                    /usr/lib64/libcurl.so.4.3.0
+2ae95f7bc000-2ae95f7bd000 rw-p 00066000 08:03 6307183                    /usr/lib64/libcurl.so.4.3.0
+2ae95f7bd000-2ae95f7be000 rw-p 00000000 00:00 0 
+2ae95f7be000-2ae97f149000 r-xp 00000000 00:2c 809501259                  /public/qmsoft/TeraChem/lib/libintbox.so.1.0
+2ae97f149000-2ae97f348000 ---p 1f98b000 00:2c 809501259                  /public/qmsoft/TeraChem/lib/libintbox.so.1.0
+2ae97f348000-2ae97f3c6000 rw-p 1f98a000 00:2c 809501259                  /public/qmsoft/TeraChem/lib/libintbox.so.1.0
+2ae97f3c6000-2ae97f3cc000 rw-p 00000000 00:00 0 
+2ae97f3cc000-2ae980caa000 r-xp 00000000 00:2c 809501246                  /public/qmsoft/TeraChem/lib/libthcbox.so.1.0
+2ae980caa000-2ae980eaa000 ---p 018de000 00:2c 809501246                  /public/qmsoft/TeraChem/lib/libthcbox.so.1.0
+2ae980eaa000-2ae980f27000 rw-p 018de000 00:2c 809501246                  /public/qmsoft/TeraChem/lib/libthcbox.so.1.0
+2ae980f27000-2ae980f36000 rw-p 00000000 00:00 0 
+2ae980f36000-2ae981219000 r-xp 00000000 00:2c 809501258                  /public/qmsoft/TeraChem/lib/libgridbox.so.1.0
+2ae981219000-2ae981418000 ---p 002e3000 00:2c 809501258                  /public/qmsoft/TeraChem/lib/libgridbox.so.1.0
+2ae981418000-2ae981419000 rw-p 002e2000 00:2c 809501258                  /public/qmsoft/TeraChem/lib/libgridbox.so.1.0
+2ae981419000-2ae981427000 rw-p 00000000 00:00 0 
+2ae981427000-2ae981537000 r-xp 00000000 00:2c 809501260                  /public/qmsoft/TeraChem/lib/libdftbox.so.1.0
+2ae981537000-2ae981736000 ---p 00110000 00:2c 809501260                  /public/qmsoft/TeraChem/lib/libdftbox.so.1.0
+2ae981736000-2ae981738000 rw-p 0010f000 00:2c 809501260                  /public/qmsoft/TeraChem/lib/libdftbox.so.1.0
+2ae981738000-2ae983ebd000 r-xp 00000000 00:2c 809501257                  /public/qmsoft/TeraChem/lib/libcublas.so.8.0
+2ae983ebd000-2ae9840bc000 ---p 02785000 00:2c 809501257                  /public/qmsoft/TeraChem/lib/libcublas.so.8.0
+2ae9840bc000-2ae9840da000 rw-p 02784000 00:2c 809501257                  /public/qmsoft/TeraChem/lib/libcublas.so.8.0
+2ae9840da000-2ae9840e8000 rw-p 00000000 00:00 0 
+2ae9840e8000-2ae98ccd0000 r-xp 00000000 00:2c 809501248                  /public/qmsoft/TeraChem/lib/libcufft.so.8.0
+2ae98ccd0000-2ae98cecf000 ---p 08be8000 00:2c 809501248                  /public/qmsoft/TeraChem/lib/libcufft.so.8.0
+2ae98cecf000-2ae98cede000 rw-p 08be7000 00:2c 809501248                  /public/qmsoft/TeraChem/lib/libcufft.so.8.0
+2ae98cede000-2ae98cf36000 rw-p 00000000 00:00 0 
+2ae98cf36000-2ae98db42000 r-xp 00000000 00:2c 806104216                  /public/qmsoft/TeraChem/lib/libcuda.so.1
+2ae98db42000-2ae98dd41000 ---p 00c0c000 00:2c 806104216                  /public/qmsoft/TeraChem/lib/libcuda.so.1
+2ae98dd41000-2ae98dea7000 rw-p 00c0b000 00:2c 806104216                  /public/qmsoft/TeraChem/lib/libcuda.so.1
+2ae98dea7000-2ae98deb6000 rw-p 00000000 00:00 0 
+2ae98deb6000-2ae98df18000 r-xp 00000000 00:2c 809501247                  /public/qmsoft/TeraChem/lib/libcudart.so.8.0
+2ae98df18000-2ae98e118000 ---p 00062000 00:2c 809501247                  /public/qmsoft/TeraChem/lib/libcudart.so.8.0
+2ae98e118000-2ae98e11b000 rw-p 00062000 00:2c 809501247                  /public/qmsoft/TeraChem/lib/libcudart.so.8.0
+2ae98e11b000-2ae98e11c000 rw-p 00000000 00:00 0 
+2ae98e11c000-2ae98e2d9000 r-xp 00000000 08:03 6300506                    /usr/lib64/libcrypto.so.1.0.1e
+2ae98e2d9000-2ae98e4d9000 ---p 001bd000 08:03 6300506                    /usr/lib64/libcrypto.so.1.0.1e
+2ae98e4d9000-2ae98e4f3000 r--p 001bd000 08:03 6300506                    /usr/lib64/libcrypto.so.1.0.1e
+2ae98e4f3000-2ae98e4ff000 rw-p 001d7000 08:03 6300506                    /usr/lib64/libcrypto.so.1.0.1e
+2ae98e4ff000-2ae98e503000 rw-p 00000000 00:00 0 
+2ae98e503000-2ae98e566000 r-xp 00000000 08:03 6300508                    /usr/lib64/libssl.so.1.0.1e
+2ae98e566000-2ae98e765000 ---p 00063000 08:03 6300508                    /usr/lib64/libssl.so.1.0.1e
+2ae98e765000-2ae98e769000 r--p 00062000 08:03 6300508                    /usr/lib64/libssl.so.1.0.1e
+2ae98e769000-2ae98e770000 rw-p 00066000 08:03 6300508                    /usr/lib64/libssl.so.1.0.1e
+2ae98e770000-2ae98e871000 r-xp 00000000 08:03 6316630                    /usr/lib64/libm-2.18.so
+2ae98e871000-2ae98ea70000 ---p 00101000 08:03 6316630                    /usr/lib64/libm-2.18.so
+2ae98ea70000-2ae98ea71000 r--p 00100000 08:03 6316630                    /usr/lib64/libm-2.18.so
+2ae98ea71000-2ae98ea72000 rw-p 00101000 08:03 6316630                    /usr/lib64/libm-2.18.so
+2ae98ea72000-2ae98eaae000 r-xp 00000000 00:2c 809501256                  /public/qmsoft/TeraChem/lib/libcilkrts.so.5
+2ae98eaae000-2ae98ecad000 ---p 0003c000 00:2c 809501256                  /public/qmsoft/TeraChem/lib/libcilkrts.so.5
+2ae98ecad000-2ae98ecae000 r--p 0003b000 00:2c 809501256                  /public/qmsoft/TeraChem/lib/libcilkrts.so.5
+2ae98ecae000-2ae98ecb0000 rw-p 0003c000 00:2c 809501256                  /public/qmsoft/TeraChem/lib/libcilkrts.so.5
+2ae98ecb0000-2ae98ecb3000 rw-p 00000000 00:00 0 
+2ae98ecb3000-2ae98ed9c000 r-xp 00000000 08:03 6296987                    /usr/lib64/libstdc++.so.6.0.19
+2ae98ed9c000-2ae98ef9c000 ---p 000e9000 08:03 6296987                    /usr/lib64/libstdc++.so.6.0.19
+2ae98ef9c000-2ae98efa4000 r--p 000e9000 08:03 6296987                    /usr/lib64/libstdc++.so.6.0.19
+2ae98efa4000-2ae98efa6000 rw-p 000f1000 08:03 6296987                    /usr/lib64/libstdc++.so.6.0.19
+2ae98efa6000-2ae98efbb000 rw-p 00000000 00:00 0 
+2ae98efbb000-2ae98efd0000 r-xp 00000000 08:03 6291475                    /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2ae98efd0000-2ae98f1cf000 ---p 00015000 08:03 6291475                    /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2ae98f1cf000-2ae98f1d0000 r--p 00014000 08:03 6291475                    /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2ae98f1d0000-2ae98f1d1000 rw-p 00015000 08:03 6291475                    /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+2ae98f1d1000-2ae98f1ea000 r-xp 00000000 08:03 6316675                    /usr/lib64/libpthread-2.18.so
+2ae98f1ea000-2ae98f3e9000 ---p 00019000 08:03 6316675                    /usr/lib64/libpthread-2.18.so
+2ae98f3e9000-2ae98f3ea000 r--p 00018000 08:03 6316675                    /usr/lib64/libpthread-2.18.so
+2ae98f3ea000-2ae98f3eb000 rw-p 00019000 08:03 6316675                    /usr/lib64/libpthread-2.18.so
+2ae98f3eb000-2ae98f3ef000 rw-p 00000000 00:00 0 
+2ae98f3ef000-2ae98f3f2000 r-xp 00000000 08:03 6372123                    /usr/lib64/libdl-2.18.so
+2ae98f3f2000-2ae98f5f1000 ---p 00003000 08:03 6372123                    /usr/lib64/libdl-2.18.so
+2ae98f5f1000-2ae98f5f2000 r--p 00002000 08:03 6372123                    /usr/lib64/libdl-2.18.so
+2ae98f5f2000-2ae98f5f3000 rw-p 00003000 08:03 6372123                    /usr/lib64/libdl-2.18.so
+2ae98f5f3000-2ae98f796000 r-xp 00000000 08:03 6372116                    /usr/lib64/libc-2.18.so
+2ae98f796000-2ae98f996000 ---p 001a3000 08:03 6372116                    /usr/lib64/libc-2.18.so
+2ae98f996000-2ae98f99a000 r--p 001a3000 08:03 6372116                    /usr/lib64/libc-2.18.so
+2ae98f99a000-2ae98f99c000 rw-p 001a7000 08:03 6372116                    /usr/lib64/libc-2.18.so
+2ae98f99c000-2ae98f9a0000 rw-p 00000000 00:00 0 
+2ae98f9a0000-2ae98f9d2000 r-xp 00000000 08:03 6297893                    /usr/lib64/libidn.so.11.6.11
+2ae98f9d2000-2ae98fbd1000 ---p 00032000 08:03 6297893                    /usr/lib64/libidn.so.11.6.11
+2ae98fbd1000-2ae98fbd2000 r--p 00031000 08:03 6297893                    /usr/lib64/libidn.so.11.6.11
+2ae98fbd2000-2ae98fbd3000 rw-p 00032000 08:03 6297893                    /usr/lib64/libidn.so.11.6.11
+2ae98fbd3000-2ae98fbfb000 r-xp 00000000 08:03 6302785                    /usr/lib64/libssh2.so.1.0.1
+2ae98fbfb000-2ae98fdfb000 ---p 00028000 08:03 6302785                    /usr/lib64/libssh2.so.1.0.1
+2ae98fdfb000-2ae98fdfc000 r--p 00028000 08:03 6302785                    /usr/lib64/libssh2.so.1.0.1
+2ae98fdfc000-2ae98fdfd000 rw-p 00029000 08:03 6302785                    /usr/lib64/libssh2.so.1.0.1
+2ae98fdfd000-2ae98fe3a000 r-xp 00000000 08:03 6307157                    /usr/lib64/libssl3.so
+2ae98fe3a000-2ae99003a000 ---p 0003d000 08:03 6307157                    /usr/lib64/libssl3.so
+2ae99003a000-2ae99003d000 r--p 0003d000 08:03 6307157                    /usr/lib64/libssl3.so
+2ae99003d000-2ae99003e000 rw-p 00040000 08:03 6307157                    /usr/lib64/libssl3.so
+2ae99003e000-2ae99003f000 rw-p 00000000 00:00 0 
+2ae99003f000-2ae990063000 r-xp 00000000 08:03 6307156                    /usr/lib64/libsmime3.so
+2ae990063000-2ae990262000 ---p 00024000 08:03 6307156                    /usr/lib64/libsmime3.so
+2ae990262000-2ae990265000 r--p 00023000 08:03 6307156                    /usr/lib64/libsmime3.so
+2ae990265000-2ae990266000 rw-p 00026000 08:03 6307156                    /usr/lib64/libsmime3.so
+2ae990266000-2ae990384000 r-xp 00000000 08:03 6307154                    /usr/lib64/libnss3.so
+2ae990384000-2ae990583000 ---p 0011e000 08:03 6307154                    /usr/lib64/libnss3.so
+2ae990583000-2ae990588000 r--p 0011d000 08:03 6307154                    /usr/lib64/libnss3.so
+2ae990588000-2ae99058a000 rw-p 00122000 08:03 6307154                    /usr/lib64/libnss3.so
+2ae99058a000-2ae99058c000 rw-p 00000000 00:00 0 
+2ae99058c000-2ae9905b1000 r-xp 00000000 08:03 6297167                    /usr/lib64/libnssutil3.so
+2ae9905b1000-2ae9907b1000 ---p 00025000 08:03 6297167                    /usr/lib64/libnssutil3.so
+2ae9907b1000-2ae9907b7000 r--p 00025000 08:03 6297167                    /usr/lib64/libnssutil3.so
+2ae9907b7000-2ae9907b8000 rw-p 0002b000 08:03 6297167                    /usr/lib64/libnssutil3.so
+2ae9907b8000-2ae9907bb000 r-xp 00000000 08:03 6297151                    /usr/lib64/libplds4.so
+2ae9907bb000-2ae9909ba000 ---p 00003000 08:03 6297151                    /usr/lib64/libplds4.so
+2ae9909ba000-2ae9909bb000 r--p 00002000 08:03 6297151                    /usr/lib64/libplds4.so
+2ae9909bb000-2ae9909bc000 rw-p 00003000 08:03 6297151                    /usr/lib64/libplds4.so
+2ae9909bc000-2ae9909c0000 r-xp 00000000 08:03 6297150                    /usr/lib64/libplc4.so
+2ae9909c0000-2ae990bbf000 ---p 00004000 08:03 6297150                    /usr/lib64/libplc4.so
+2ae990bbf000-2ae990bc0000 r--p 00003000 08:03 6297150                    /usr/lib64/libplc4.so
+2ae990bc0000-2ae990bc1000 rw-p 00004000 08:03 6297150                    /usr/lib64/libplc4.so
+2ae990bc1000-2ae990bfa000 r-xp 00000000 08:03 6297149                    /usr/lib64/libnspr4.so
+2ae990bfa000-2ae990dfa000 ---p 00039000 08:03 6297149                    /usr/lib64/libnspr4.so
+2ae990dfa000-2ae990dfb000 r--p 00039000 08:03 6297149                    /usr/lib64/libnspr4.so
+2ae990dfb000-2ae990dfd000 rw-p 0003a000 08:03 6297149                    /usr/lib64/libnspr4.so
+2ae990dfd000-2ae990dff000 rw-p 00000000 00:00 0 
+2ae990dff000-2ae990e48000 r-xp 00000000 08:03 6300484                    /usr/lib64/libgssapi_krb5.so.2.2
+2ae990e48000-2ae991048000 ---p 00049000 08:03 6300484                    /usr/lib64/libgssapi_krb5.so.2.2
+2ae991048000-2ae991049000 r--p 00049000 08:03 6300484                    /usr/lib64/libgssapi_krb5.so.2.2
+2ae991049000-2ae99104b000 rw-p 0004a000 08:03 6300484                    /usr/lib64/libgssapi_krb5.so.2.2
+2ae99104b000-2ae991120000 r-xp 00000000 08:03 6300498                    /usr/lib64/libkrb5.so.3.3
+2ae991120000-2ae991320000 ---p 000d5000 08:03 6300498                    /usr/lib64/libkrb5.so.3.3
+2ae991320000-2ae99132d000 r--p 000d5000 08:03 6300498                    /usr/lib64/libkrb5.so.3.3
+2ae99132d000-2ae991330000 rw-p 000e2000 08:03 6300498                    /usr/lib64/libkrb5.so.3.3
+2ae991330000-2ae99135f000 r-xp 00000000 08:03 6300488                    /usr/lib64/libk5crypto.so.3.1
+2ae99135f000-2ae99155e000 ---p 0002f000 08:03 6300488                    /usr/lib64/libk5crypto.so.3.1
+2ae99155e000-2ae991560000 r--p 0002e000 08:03 6300488                    /usr/lib64/libk5crypto.so.3.1
+2ae991560000-2ae991561000 rw-p 00030000 08:03 6300488                    /usr/lib64/libk5crypto.so.3.1
+2ae991561000-2ae991562000 rw-p 00000000 00:00 0 
+2ae991562000-2ae991565000 r-xp 00000000 08:03 6297148                    /usr/lib64/libcom_err.so.2.1
+2ae991565000-2ae991764000 ---p 00003000 08:03 6297148                    /usr/lib64/libcom_err.so.2.1
+2ae991764000-2ae991765000 r--p 00002000 08:03 6297148                    /usr/lib64/libcom_err.so.2.1
+2ae991765000-2ae991766000 rw-p 00003000 08:03 6297148                    /usr/lib64/libcom_err.so.2.1
+2ae991766000-2ae991774000 r-xp 00000000 08:03 6307223                    /usr/lib64/liblber-2.4.so.2.10.3
+2ae991774000-2ae991973000 ---p 0000e000 08:03 6307223                    /usr/lib64/liblber-2.4.so.2.10.3
+2ae991973000-2ae991974000 r--p 0000d000 08:03 6307223                    /usr/lib64/liblber-2.4.so.2.10.3
+2ae991974000-2ae991975000 rw-p 0000e000 08:03 6307223                    /usr/lib64/liblber-2.4.so.2.10.3
+2ae991975000-2ae9919c5000 r-xp 00000000 08:03 6307225                    /usr/lib64/libldap-2.4.so.2.10.3
+2ae9919c5000-2ae991bc4000 ---p 00050000 08:03 6307225                    /usr/lib64/libldap-2.4.so.2.10.3
+2ae991bc4000-2ae991bc7000 r--p 0004f000 08:03 6307225                    /usr/lib64/libldap-2.4.so.2.10.3
+2ae991bc7000-2ae991bc8000 rw-p 00052000 08:03 6307225                    /usr/lib64/libldap-2.4.so.2.10.3
+2ae991bc8000-2ae991bdd000 r-xp 00000000 08:03 6297129                    /usr/lib64/libz.so.1.2.7
+2ae991bdd000-2ae991ddc000 ---p 00015000 08:03 6297129                    /usr/lib64/libz.so.1.2.7
+2ae991ddc000-2ae991ddd000 r--p 00014000 08:03 6297129                    /usr/lib64/libz.so.1.2.7
+2ae991ddd000-2ae991dde000 rw-p 00015000 08:03 6297129                    /usr/lib64/libz.so.1.2.7
+2ae991dde000-2ae991de5000 r-xp 00000000 08:03 6372129                    /usr/lib64/librt-2.18.so
+2ae991de5000-2ae991fe4000 ---p 00007000 08:03 6372129                    /usr/lib64/librt-2.18.so
+2ae991fe4000-2ae991fe5000 r--p 00006000 08:03 6372129                    /usr/lib64/librt-2.18.so
+2ae991fe5000-2ae991fe6000 rw-p 00007000 08:03 6372129                    /usr/lib64/librt-2.18.so
+2ae991fe6000-2ae992023000 r-xp 00000000 08:03 6327441                    /usr/lib64/libnvidia-fatbinaryloader.so.396.26
+2ae992023000-2ae992222000 ---p 0003d000 08:03 6327441                    /usr/lib64/libnvidia-fatbinaryloader.so.396.26
+2ae992222000-2ae99222d000 rw-p 0003c000 08:03 6327441                    /usr/lib64/libnvidia-fatbinaryloader.so.396.26
+2ae99222d000-2ae992232000 rw-p 00000000 00:00 0 
+2ae992232000-2ae99223f000 r-xp 00000000 08:03 6300500                    /usr/lib64/libkrb5support.so.0.1
+2ae99223f000-2ae99243f000 ---p 0000d000 08:03 6300500                    /usr/lib64/libkrb5support.so.0.1
+2ae99243f000-2ae992440000 r--p 0000d000 08:03 6300500                    /usr/lib64/libkrb5support.so.0.1
+2ae992440000-2ae992441000 rw-p 0000e000 08:03 6300500                    /usr/lib64/libkrb5support.so.0.1
+2ae992441000-2ae992444000 r-xp 00000000 08:03 6297559                    /usr/lib64/libkeyutils.so.1.5
+2ae992444000-2ae992643000 ---p 00003000 08:03 6297559                    /usr/lib64/libkeyutils.so.1.5
+2ae992643000-2ae992644000 r--p 00002000 08:03 6297559                    /usr/lib64/libkeyutils.so.1.5
+2ae992644000-2ae992645000 rw-p 00003000 08:03 6297559                    /usr/lib64/libkeyutils.so.1.5
+2ae992645000-2ae992659000 r-xp 00000000 08:03 6316680                    /usr/lib64/libresolv-2.18.so
+2ae992659000-2ae992858000 ---p 00014000 08:03 6316680                    /usr/lib64/libresolv-2.18.so
+2ae992858000-2ae992859000 r--p 00013000 08:03 6316680                    /usr/lib64/libresolv-2.18.so
+2ae992859000-2ae99285a000 rw-p 00014000 08:03 6316680                    /usr/lib64/libresolv-2.18.so
+2ae99285a000-2ae99285c000 rw-p 00000000 00:00 0 
+2ae99285c000-2ae992878000 r-xp 00000000 08:03 6297360                    /usr/lib64/libsasl2.so.3.0.0
+2ae992878000-2ae992a77000 ---p 0001c000 08:03 6297360                    /usr/lib64/libsasl2.so.3.0.0
+2ae992a77000-2ae992a78000 r--p 0001b000 08:03 6297360                    /usr/lib64/libsasl2.so.3.0.0
+2ae992a78000-2ae992a79000 rw-p 0001c000 08:03 6297360                    /usr/lib64/libsasl2.so.3.0.0
+2ae992a79000-2ae992a9a000 r-xp 00000000 08:03 6297126                    /usr/lib64/libselinux.so.1
+2ae992a9a000-2ae992c9a000 ---p 00021000 08:03 6297126                    /usr/lib64/libselinux.so.1
+2ae992c9a000-2ae992c9b000 r--p 00021000 08:03 6297126                    /usr/lib64/libselinux.so.1
+2ae992c9b000-2ae992c9c000 rw-p 00022000 08:03 6297126                    /usr/lib64/libselinux.so.1
+2ae992c9c000-2ae992c9e000 rw-p 00000000 00:00 0 
+2ae992c9e000-2ae992ca6000 r-xp 00000000 08:03 6372118                    /usr/lib64/libcrypt-2.18.so
+2ae992ca6000-2ae992ea5000 ---p 00008000 08:03 6372118                    /usr/lib64/libcrypt-2.18.so
+2ae992ea5000-2ae992ea6000 r--p 00007000 08:03 6372118                    /usr/lib64/libcrypt-2.18.so
+2ae992ea6000-2ae992ea7000 rw-p 00008000 08:03 6372118                    /usr/lib64/libcrypt-2.18.so
+2ae992ea7000-2ae992ed5000 rw-p 00000000 00:00 0 
+2ae992ed5000-2ae992f35000 r-xp 00000000 08:03 6297114                    /usr/lib64/libpcre.so.1.2.0
+2ae992f35000-2ae993134000 ---p 00060000 08:03 6297114                    /usr/lib64/libpcre.so.1.2.0
+2ae993134000-2ae993135000 r--p 0005f000 08:03 6297114                    /usr/lib64/libpcre.so.1.2.0
+2ae993135000-2ae993136000 rw-p 00060000 08:03 6297114                    /usr/lib64/libpcre.so.1.2.0
+2ae993136000-2ae99315a000 r-xp 00000000 08:03 6297124                    /usr/lib64/liblzma.so.5.0.99
+2ae99315a000-2ae993359000 ---p 00024000 08:03 6297124                    /usr/lib64/liblzma.so.5.0.99
+2ae993359000-2ae99335a000 r--p 00023000 08:03 6297124                    /usr/lib64/liblzma.so.5.0.99
+2ae99335a000-2ae99335b000 rw-p 00024000 08:03 6297124                    /usr/lib64/liblzma.so.5.0.99
+2ae99335b000-2ae99335c000 ---p 00000000 00:00 0 
+2ae99335c000-2ae99355c000 rw-p 00000000 00:00 0 
+2ae99355c000-2ae99355d000 ---p 00000000 00:00 0 
+2ae99355d000-2ae99375d000 rw-p 00000000 00:00 0                          [stack:29463]
+2ae99375d000-2ae99375e000 ---p 00000000 00:00 0 
+2ae99375e000-2ae993ae1000 rw-p 00000000 00:00 0                          [stack:29465]
+2ae993ae1000-2ae993ae2000 ---p 00000000 00:00 0 
+2ae993ae2000-2ae993d52000 rw-p 00000000 00:00 0                          [stack:29469]
+2ae993d52000-2ae993d53000 ---p 00000000 00:00 0 
+2ae993d53000-2ae993f53000 rw-p 00000000 00:00 0                          [stack:29470]
+2ae993f74000-2ae993f74000 ---p 00000000 00:00 0 
+2ae993f74000-2ae993f84000 rw-p 00000000 00:00 0 
+2ae993f84000-2ae993f85000 ---p 00000000 00:00 0 
+2ae994000000-2ae994021000 rw-p 00000000 00:00 0 
+2ae994021000-2ae998000000 ---p 00000000 00:00 0 
+2ae998000000-2ae99e000000 ---p 00000000 00:00 0 
+2ae99e000000-2ae99e001000 ---p 00000000 00:00 0 
+2ae99e001000-2ae99e201000 rw-p 00000000 00:00 0                          [stack:29472]
+2ae99e201000-2ae99e202000 ---p 00000000 00:00 0 
+2ae99e202000-2ae99e402000 rw-p 00000000 00:00 0                          [stack:29474]
+2ae99e402000-2ae99e403000 ---p 00000000 00:00 0 
+2ae99e403000-2ae99e603000 rw-p 00000000 00:00 0                          [stack:29482]
+2ae99e603000-2ae99e604000 ---p 00000000 00:00 0 
+2ae99e604000-2ae99e804000 rw-p 00000000 00:00 0                          [stack:29485]
+2ae99e804000-2ae99e805000 ---p 00000000 00:00 0 
+2ae99e805000-2ae99ea05000 rw-p 00000000 00:00 0                          [stack:29491]
+2ae99ec05000-2ae99ec06000 ---p 00000000 00:00 0 
+2ae99ec06000-2ae99ee06000 rw-p 00000000 00:00 0                          [stack:29499]
+2ae99ee06000-2ae99ee07000 ---p 00000000 00:00 0 
+2ae99ee07000-2ae99f007000 rw-p 00000000 00:00 0                          [stack:29501]
+2ae99f007000-2ae99f008000 ---p 00000000 00:00 0 
+2ae99f008000-2ae99f208000 rw-p 00000000 00:00 0                          [stack:29502]
+2ae99f208000-2ae99f209000 ---p 00000000 00:00 0 
+2ae99f209000-2ae99f409000 rw-p 00000000 00:00 0                          [stack:29504]
+2ae99f409000-2ae99f40a000 ---p 00000000 00:00 0 
+2ae99f40a000-2ae99f80a000 rw-p 00000000 00:00 0 
+2ae99f80a000-2ae99f80b000 ---p 00000000 00:00 0 
+2ae99f80b000-2ae99fc0b000 rw-p 00000000 00:00 0 
+2ae9a0000000-2ae9a0001000 rw-s 00000000 00:05 40750                      /dev/nvidia0
+2ae9a0001000-2ae9a0002000 rw-s 00000000 00:05 40750                      /dev/nvidia0
+2ae9a0002000-2ae9a0003000 rw-s 00000000 00:05 40750                      /dev/nvidia0
+2ae9a0003000-2ae9a0004000 rw-s 00000000 00:05 40750                      /dev/nvidia0
+2ae9a0004000-2ae9a0005000 rw-s 00000000 00:05 40750                      /dev/nvidia0
+2ae9a0005000-2ae9a0006000 rw-s 00000000 00:05 40750                      /dev/nvidia0
+2ae9a0006000-2ae9a0007000 rw-s 00000000 00:05 40750                      /dev/nvidia0
+2ae9a0007000-2ae9a0008000 rw-s 00000000 00:05 40750                      /dev/nvidia0
+2ae9a0008000-2ae9a0009000 rw-s 00000000 00:05 40750                      /dev/nvidia0
+2ae9a0009000-2ae9a000a000 rw-s 00000000 00:05 40750                      /dev/nvidia0
+2ae9a000a000-2ae9a000b000 rw-s 00000000 00:05 40750                      /dev/nvidia0
+2ae9a000b000-2ae9a000c000 rw-s 00000000 00:05 40750                      /dev/nvidia0
+2ae9a000c000-2ae9a000d000 rw-s 00000000 00:05 40750                      /dev/nvidia0
+2ae9a000d000-2ae9a000e000 rw-s 00000000 00:05 40750                      /dev/nvidia0
+2ae9a000e000-2ae9a000f000 rw-s 00000000 00:05 40750                      /dev/nvidia0
+2ae9a000f000-2ae9a0010000 rw-s 00000000 00:05 40750                      /dev/nvidia0
+2ae9a0010000-2ae9a0011000 rw-s 00000000 00:05 40753                      /dev/nvidia1
+2ae9a0011000-2ae9a0012000 rw-s 00000000 00:05 40753                      /dev/nvidia1
+2ae9a0012000-2ae9a0013000 rw-s 00000000 00:05 40753                      /dev/nvidia1
+2ae9a0013000-2ae9a0014000 rw-s 00000000 00:05 40753                      /dev/nvidia1
+2ae9a0014000-2ae9a0015000 rw-s 00000000 00:05 40753                      /dev/nvidia1
+2ae9a0015000-2ae9a0016000 rw-s 00000000 00:05 40753                      /dev/nvidia1
+2ae9a0016000-2ae9a0017000 rw-s 00000000 00:05 40753                      /dev/nvidia1
+2ae9a0017000-2ae9a0018000 rw-s 00000000 00:05 40753                      /dev/nvidia1
+2ae9a0018000-2ae9a0019000 rw-s 00000000 00:05 40753                      /dev/nvidia1
+2ae9a0019000-2ae9a001a000 rw-s 00000000 00:05 40753                      /dev/nvidia1
+2ae9a001a000-2ae9a001b000 rw-s 00000000 00:05 40753                      /dev/nvidia1
+2ae9a001b000-2ae9a001c000 rw-s 00000000 00:05 40753                      /dev/nvidia1
+2ae9a001c000-2ae9a001d000 rw-s 00000000 00:05 40753                      /dev/nvidia1
+2ae9a001d000-2ae9a001e000 rw-s 00000000 00:05 40753                      /dev/nvidia1
+2ae9a001e000-2ae9a001f000 rw-s 00000000 00:05 40753                      /dev/nvidia1
+2ae9a001f000-2ae9a0020000 rw-s 00000000 00:05 40753                      /dev/nvidia1
+2ae9a0020000-2ae9a0021000 rw-s 00000000 00:05 41529                      /dev/nvidia2
+2ae9a0021000-2ae9a0022000 rw-s 00000000 00:05 41529                      /dev/nvidia2
+2ae9a0022000-2ae9a0023000 rw-s 00000000 00:05 41529                      /dev/nvidia2
+2ae9a0023000-2ae9a0024000 rw-s 00000000 00:05 41529                      /dev/nvidia2
+2ae9a0024000-2ae9a0025000 rw-s 00000000 00:05 41529                      /dev/nvidia2
+2ae9a0025000-2ae9a0026000 rw-s 00000000 00:05 41529                      /dev/nvidia2
+2ae9a0026000-2ae9a0027000 rw-s 00000000 00:05 41529                      /dev/nvidia2
+2ae9a0027000-2ae9a0028000 rw-s 00000000 00:05 41529                      /dev/nvidia2
+2ae9a0028000-2ae9a0029000 rw-s 00000000 00:05 41529                      /dev/nvidia2
+2ae9a0029000-2ae9a002a000 rw-s 00000000 00:05 41529                      /dev/nvidia2
+2ae9a002a000-2ae9a002b000 rw-s 00000000 00:05 41529                      /dev/nvidia2
+2ae9a002b000-2ae9a002c000 rw-s 00000000 00:05 41529                      /dev/nvidia2
+2ae9a002c000-2ae9a002d000 rw-s 00000000 00:05 41529                      /dev/nvidia2
+2ae9a002d000-2ae9a002e000 rw-s 00000000 00:05 41529                      /dev/nvidia2
+2ae9a002e000-2ae9a002f000 rw-s 00000000 00:05 41529                      /dev/nvidia2
+2ae9a002f000-2ae9a0030000 rw-s 00000000 00:05 41529                      /dev/nvidia2
+2ae9a0030000-2ae9a0031000 rw-s 00000000 00:05 41530                      /dev/nvidia3
+2ae9a0031000-2ae9a0032000 rw-s 00000000 00:05 41530                      /dev/nvidia3
+2ae9a0032000-2ae9a0033000 rw-s 00000000 00:05 41530                      /dev/nvidia3
+2ae9a0033000-2ae9a0034000 rw-s 00000000 00:05 41530                      /dev/nvidia3
+2ae9a0034000-2ae9a0035000 rw-s 00000000 00:05 41530                      /dev/nvidia3
+2ae9a0035000-2ae9a0036000 rw-s 00000000 00:05 41530                      /dev/nvidia3
+2ae9a0036000-2ae9a0037000 rw-s 00000000 00:05 41530                      /dev/nvidia3
+2ae9a0037000-2ae9a0038000 rw-s 00000000 00:05 41530                      /dev/nvidia3
+2ae9a0038000-2ae9a0039000 rw-s 00000000 00:05 41530                      /dev/nvidia3
+2ae9a0039000-2ae9a003a000 rw-s 00000000 00:05 41530                      /dev/nvidia3
+2ae9a003a000-2ae9a003b000 rw-s 00000000 00:05 41530                      /dev/nvidia3
+2ae9a003b000-2ae9a003c000 rw-s 00000000 00:05 41530                      /dev/nvidia3
+2ae9a003c000-2ae9a003d000 rw-s 00000000 00:05 41530                      /dev/nvidia3
+2ae9a003d000-2ae9a003e000 rw-s 00000000 00:05 41530                      /dev/nvidia3
+2ae9a003e000-2ae9a003f000 rw-s 00000000 00:05 41530                      /dev/nvidia3
+2ae9a003f000-2ae9a0040000 rw-s 00000000 00:05 41530                      /dev/nvidia3
+2ae9a0040000-2ae9b0200000 ---p 00000000 00:00 0 
+2ae9b0200000-2ae9b0400000 rw-s 00000000 00:04 16709552                   /dev/zero (deleted)
+2ae9b0400000-2ae9b0600000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae9b0600000-2ae9b0800000 rw-s 00000000 00:04 16709553                   /dev/zero (deleted)
+2ae9b0800000-2ae9b0a00000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae9b0a00000-2ae9b0c00000 ---p 00000000 00:00 0 
+2ae9b0c00000-2ae9b0ed6000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae9b0ed6000-2ae9b2000000 ---p 00000000 00:00 0 
+2ae9b2000000-2ae9b3873000 rw-p 00000000 00:00 0 
+2ae9b3973000-2ae9b3974000 ---p 00000000 00:00 0 
+2ae9b3974000-2ae9b3d74000 rw-p 00000000 00:00 0 
+2ae9b3d74000-2ae9b3d75000 ---p 00000000 00:00 0 
+2ae9b3d75000-2ae9b3f75000 rw-p 00000000 00:00 0 
+2ae9b4000000-2ae9b4021000 rw-p 00000000 00:00 0 
+2ae9b4021000-2ae9b8000000 ---p 00000000 00:00 0 
+2ae9b8000000-2ae9b9200000 ---p 00000000 00:00 0 
+2ae9b9200000-2ae9b9400000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae9b9400000-2ae9b9600000 ---p 00000000 00:00 0 
+2ae9b9600000-2ae9b98d6000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae9b98d6000-2ae9c1a00000 ---p 00000000 00:00 0 
+2ae9c1a00000-2ae9c1c00000 rw-s 00000000 00:04 16708292                   /dev/zero (deleted)
+2ae9c1c00000-2ae9c1e00000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae9c1e00000-2ae9c2000000 rw-s 00000000 00:04 16708293                   /dev/zero (deleted)
+2ae9c2000000-2ae9c2001000 ---p 00000000 00:00 0 
+2ae9c2001000-2ae9c2201000 rw-p 00000000 00:00 0 
+2ae9c2201000-2ae9c2202000 ---p 00000000 00:00 0 
+2ae9c2202000-2ae9c2402000 rw-p 00000000 00:00 0 
+2ae9c2403000-2ae9c2403000 ---p 00000000 00:00 0 
+2ae9c2403000-2ae9c2501000 rw-p 00000000 00:00 0 
+2ae9c2501000-2ae9c2503000 ---p 00000000 00:00 0 
+2ae9c2503000-2ae9c2601000 rw-p 00000000 00:00 0 
+2ae9c2601000-2ae9c2603000 ---p 00000000 00:00 0 
+2ae9c2603000-2ae9c2701000 rw-p 00000000 00:00 0 
+2ae9c2701000-2ae9c2703000 ---p 00000000 00:00 0 
+2ae9c2703000-2ae9c2801000 rw-p 00000000 00:00 0 
+2ae9c2801000-2ae9c2803000 ---p 00000000 00:00 0 
+2ae9c2803000-2ae9c2901000 rw-p 00000000 00:00 0                          [stack:29438]
+2ae9c2901000-2ae9c2902000 ---p 00000000 00:00 0 
+2ae9c2902000-2ae9c2903000 ---p 00000000 00:00 0 
+2ae9c2903000-2ae9c2d03000 rw-p 00000000 00:00 0                          [stack:29537]
+2ae9c2d03000-2ae9c2d04000 ---p 00000000 00:00 0 
+2ae9c2d04000-2ae9c3104000 rw-p 00000000 00:00 0                          [stack:29538]
+2ae9c3104000-2ae9c3105000 ---p 00000000 00:00 0 
+2ae9c3105000-2ae9c3505000 rw-p 00000000 00:00 0                          [stack:29539]
+2ae9c3505000-2ae9c3506000 ---p 00000000 00:00 0 
+2ae9c3506000-2ae9c3906000 rw-p 00000000 00:00 0                          [stack:29540]
+2ae9c3906000-2ae9c3907000 ---p 00000000 00:00 0 
+2ae9c3907000-2ae9c3d07000 rw-p 00000000 00:00 0                          [stack:29541]
+2ae9c3d08000-2ae9c3d08000 ---p 00000000 00:00 0 
+2ae9c3d08000-2ae9c3e06000 rw-p 00000000 00:00 0 
+2ae9c3e06000-2ae9c3e08000 ---p 00000000 00:00 0 
+2ae9c3e08000-2ae9c3f06000 rw-p 00000000 00:00 0                          [stack:29521]
+2ae9c3f06000-2ae9c3f07000 ---p 00000000 00:00 0 
+2ae9c4000000-2ae9c4021000 rw-p 00000000 00:00 0 
+2ae9c4021000-2ae9c8000000 ---p 00000000 00:00 0 
+2ae9c8000000-2ae9c8021000 rw-p 00000000 00:00 0 
+2ae9c8021000-2ae9cc000000 ---p 00000000 00:00 0 
+2ae9cc000000-2ae9cd200000 ---p 00000000 00:00 0 
+2ae9cd200000-2ae9cd400000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae9cd400000-2ae9cd600000 ---p 00000000 00:00 0 
+2ae9cd600000-2ae9cd8d6000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae9cd8d6000-2ae9d5a00000 ---p 00000000 00:00 0 
+2ae9d5a00000-2ae9d5c00000 rw-s 00000000 00:04 16708296                   /dev/zero (deleted)
+2ae9d5c00000-2ae9d5e00000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae9d5e00000-2ae9d6000000 rw-s 00000000 00:04 16708297                   /dev/zero (deleted)
+2ae9d6000000-2ae9d6001000 ---p 00000000 00:00 0 
+2ae9d6001000-2ae9d6401000 rw-p 00000000 00:00 0                          [stack:29542]
+2ae9d6401000-2ae9d6402000 ---p 00000000 00:00 0 
+2ae9d6402000-2ae9d6802000 rw-p 00000000 00:00 0                          [stack:29543]
+2ae9d6803000-2ae9d6803000 ---p 00000000 00:00 0 
+2ae9d6803000-2ae9d6901000 rw-p 00000000 00:00 0                          [stack:29520]
+2ae9d6901000-2ae9d6903000 ---p 00000000 00:00 0 
+2ae9d6903000-2ae9d6a01000 rw-p 00000000 00:00 0 
+2ae9d6a01000-2ae9d6a03000 ---p 00000000 00:00 0 
+2ae9d6a03000-2ae9d6b01000 rw-p 00000000 00:00 0                          [stack:29519]
+2ae9d6b01000-2ae9d6b02000 ---p 00000000 00:00 0 
+2ae9d8000000-2ae9d8021000 rw-p 00000000 00:00 0 
+2ae9d8021000-2ae9dc000000 ---p 00000000 00:00 0 
+2ae9dc000000-2ae9dc021000 rw-p 00000000 00:00 0 
+2ae9dc021000-2ae9e0000000 ---p 00000000 00:00 0 
+2ae9e0000000-2ae9e1200000 ---p 00000000 00:00 0 
+2ae9e1200000-2ae9e1400000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae9e1400000-2ae9e1600000 ---p 00000000 00:00 0 
+2ae9e1600000-2ae9e18d6000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae9e18d6000-2ae9e9a00000 ---p 00000000 00:00 0 
+2ae9e9a00000-2ae9e9c00000 rw-s 00000000 00:04 16708300                   /dev/zero (deleted)
+2ae9e9c00000-2ae9e9e00000 rw-s 00000000 00:05 43608                      /dev/nvidiactl
+2ae9e9e00000-2ae9ea000000 rw-s 00000000 00:04 16708301                   /dev/zero (deleted)
+2ae9ec000000-2ae9ec021000 rw-p 00000000 00:00 0 
+2ae9ec021000-2ae9f0000000 ---p 00000000 00:00 0 
+2ae9f0000000-2ae9f0021000 rw-p 00000000 00:00 0 
+2ae9f0021000-2ae9f4000000 ---p 00000000 00:00 0 
+2ae9f4000000-2aea3e000000 ---p 00000000 00:00 0 
+2aea3e000000-2aea7e000000 rw-s 00000000 00:04 16708302                   /dev/zero (deleted)
+2aea7e000000-2aeabe000000 ---p 00000000 00:00 0 
+2aeabe000000-2aeafe000000 rw-s 00000000 00:04 16708303                   /dev/zero (deleted)
+2aeafe000000-2aeb3e000000 ---p 00000000 00:00 0 
+2aeb3e000000-2aeb7e000000 rw-s 00000000 00:04 16708304                   /dev/zero (deleted)
+2aeb7e000000-2aebbe000000 ---p 00000000 00:00 0 
+2aebbe000000-2aebfe000000 rw-s 00000000 00:04 16708305                   /dev/zero (deleted)
+2aec00000000-2aec03ee1000 rw-p 00000000 00:00 0 
+2aec03ee1000-2aec04000000 ---p 00000000 00:00 0 
+2aec04000000-2aec07e36000 rw-p 00000000 00:00 0 
+2aec07e36000-2aec08000000 ---p 00000000 00:00 0 
+2aec08000000-2aec0907a000 rw-p 00000000 00:00 0 
+2aec0907a000-2aec0c000000 ---p 00000000 00:00 0 
+2aec0c000000-2aec1e000000 ---p 00000000 00:00 0 
+2aec20000000-2aec23ec9000 rw-p 00000000 00:00 0 
+2aec23ec9000-2aec24000000 ---p 00000000 00:00 0 
+2aec24000000-2aec27e25000 rw-p 00000000 00:00 0 
+2aec27e25000-2aec28000000 ---p 00000000 00:00 0 
+2aec28000000-2aec2903e000 rw-p 00000000 00:00 0 
+2aec2903e000-2aec2c000000 ---p 00000000 00:00 0 
+2aec2c000000-2aec3e000000 ---p 00000000 00:00 0 
+2aec40000000-2aec43ec9000 rw-p 00000000 00:00 0 
+2aec43ec9000-2aec44000000 ---p 00000000 00:00 0 
+2aec44000000-2aec47e25000 rw-p 00000000 00:00 0 
+2aec47e25000-2aec48000000 ---p 00000000 00:00 0 
+2aec48000000-2aec4903e000 rw-p 00000000 00:00 0 
+2aec4903e000-2aec4c000000 ---p 00000000 00:00 0 
+2aec4c000000-2aec5e000000 ---p 00000000 00:00 0 
+2aec60000000-2aec63ec9000 rw-p 00000000 00:00 0 
+2aec63ec9000-2aec64000000 ---p 00000000 00:00 0 
+2aec64000000-2aec67e25000 rw-p 00000000 00:00 0 
+2aec67e25000-2aec68000000 ---p 00000000 00:00 0 
+2aec68000000-2aec6903e000 rw-p 00000000 00:00 0 
+2aec6903e000-2aec6c000000 ---p 00000000 00:00 0 
+2aec6c000000-2aec7e000000 ---p 00000000 00:00 0 
+2aec7e000000-2aecbf04f000 rw-p 00000000 00:00 0 
+2aecc0000000-2aecc0021000 rw-p 00000000 00:00 0 
+2aecc0021000-2aecc4000000 ---p 00000000 00:00 0 
+2aecc4000000-2aecc65b8000 rw-p 00000000 00:00 0 
+2aecc65b8000-2aecc8000000 ---p 00000000 00:00 0 
+2aecc8000000-2aecca5b8000 rw-p 00000000 00:00 0 
+2aecca5b8000-2aeccc000000 ---p 00000000 00:00 0 
+2aeccc000000-2aecce5b8000 rw-p 00000000 00:00 0 
+2aecce5b8000-2aecd0000000 ---p 00000000 00:00 0 
+2aecd0000000-2aecda8a1000 rw-p 00000000 00:00 0 
+2aece0000000-2aece0021000 rw-p 00000000 00:00 0 
+2aece0021000-2aece4000000 ---p 00000000 00:00 0 
+2aece4000000-2aece51b7000 rw-p 00000000 00:00 0 
+2aece51b7000-2aece8000000 ---p 00000000 00:00 0 
+2aece8000000-2aece969a000 rw-p 00000000 00:00 0 
+2aece969a000-2aecec000000 ---p 00000000 00:00 0 
+2aecf4000000-2aecf4021000 rw-p 00000000 00:00 0 
+2aecf4021000-2aecf8000000 ---p 00000000 00:00 0 
+2aecf8000000-2aecf8021000 rw-p 00000000 00:00 0 
+2aecf8021000-2aecfc000000 ---p 00000000 00:00 0 
+2aecfc000000-2aecfc021000 rw-p 00000000 00:00 0 
+2aecfc021000-2aed00000000 ---p 00000000 00:00 0 
+2aed00000000-2aed00021000 rw-p 00000000 00:00 0 
+2aed00021000-2aed04000000 ---p 00000000 00:00 0 
+2aed04000000-2aed04021000 rw-p 00000000 00:00 0 
+2aed04021000-2aed08000000 ---p 00000000 00:00 0 
+2aed08000000-2aed08021000 rw-p 00000000 00:00 0 
+2aed08021000-2aed0c000000 ---p 00000000 00:00 0 
+2aed0c000000-2aed0c021000 rw-p 00000000 00:00 0 
+2aed0c021000-2aed10000000 ---p 00000000 00:00 0 
+7ffd0f99b000-7ffd0fa9d000 rw-p 00000000 00:00 0 
+7ffd0fb2a000-7ffd0fb2c000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+Error detected at line 190 in intbox/src/gpucx.cpp
+Failed to set device, error code 29
+Terminated: Wed May  1 15:36:36 2019
+
+Error detected at line 190 in intbox/src/gpucx.cpp
+Failed to set device, error code 29
+Terminated: Wed May  1 15:36:36 2019
+
