@@ -26,7 +26,7 @@ method         | bond   | angle |clashscore |rama_outlier| rama_favor|rotamer | 
 initial        | 0.005  | 0.942 |   92.04   |    4.9     |   74.2    | 36.08  | 0.6239
 cctbx_refine   | 0.002  | 0.48  |    4.6    |    4.26    |  77.61    |  10.41 |  0.6564
 xtb_refine     | 0.011  | 1.86  |    1.8    |    2.13    |   87.21   |  7.75  |   0.6623
-terachem_refine| 0.014  | 1.87  |    7.0    |    2.56    |   85.07   |  17.92 | 0.6555
+terachem_refine| 0.012  | 1.61  |    1.08   |    2.13    |   89.98   |  11.14 | 0.6394
 ## command used
 0. if ligand included, phenix.pdbtool keep="protein" *.pdb
 1. phenix.map_box mask_atoms=true soft_mask=true keep_origin=false keep_input_unit_cell_and_grid=false *.pdb *.map
