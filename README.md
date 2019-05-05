@@ -10,7 +10,7 @@ terachem_refine| 0.014  | 1.4   |  1.53     |   0        |   96.75   |  4.62  | 
 method         | bond   | angle |clashscore |rama_outlier| rama_favor|rotamer | CC_mask
 :--:           | :--:   | :--:  |   :--:    |   :--:     |   :--:    |:--:    |:--:
 initial        | 0.004  | 1.007 |   50.84   |   4.49     |   85.39   | 5.48   | 0.6747
-cctbx_refine   | 0.002  | 0.5   |   4.18    |   0        |   96.63   | 5.48   | 0.6711
+cctbx_refine   | 0.002  | 0.749 |   3.48    |   0        |   98.88   | 4.11   | 0.6553
 xtb_refine     | 0.011  | 1.67  |   3.5     |   0        |   91.01   | 4.11   | 0.6530
 terachem_refine| 0.013  | 1.535 |   0.70    |   0        |   100.00  | 1.37   | 0.6386
 ## 5fn5_chain_c(3787 atoms)
