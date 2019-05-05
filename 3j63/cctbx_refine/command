@@ -1,0 +1,2 @@
+nohup qr.refine A_box.ccp4 A_box_complete.pdb restraints=cctbx clustering=false gradient_only=true stpmax=4 data_weight=0.5 skip_weight_search=true max_iterations_refine=100 number_of_refine_cycles=4 > log 2>&1 &
+
