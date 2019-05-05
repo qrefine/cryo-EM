@@ -27,6 +27,12 @@ initial        | 0.005  | 0.942 |   92.04   |    4.9     |   74.2    | 36.08  | 
 cctbx_refine   | 0.002  | 0.48  |    4.6    |    4.26    |  77.61    |  10.41 |  0.6564
 xtb_refine     | 0.011  | 1.86  |    1.8    |    2.13    |   87.21   |  7.75  |   0.6623
 terachem_refine| 0.012  | 1.61  |    1.08   |    2.13    |   89.98   |  11.14 | 0.6394
+### 6i5a(2396 atoms)
+method         | bond   | angle |clashscore |rama_outlier| rama_favor|rotamer | CC_mask
+:--:           | :--:   | :--:  |   :--:    |   :--:     |   :--:    |:--:    |:--:
+initial        | 0.012  | 1.840 |  6.69     |   1.32     |  97.35    |  0.74  | 0.8156
+xtb_refine     | 0.011  | 1.590 |   2.09    |   1.32     |  94.70    |  0.74  | 0.8066
+terachem_refine| 0.010  | 1.407 |   0.84    |   1.32     |  98.68    |  0.00  | 0.8106
 ## command used
 0. if ligand included, phenix.pdbtool keep="protein" *.pdb
 1. phenix.map_box mask_atoms=true soft_mask=true keep_origin=false keep_input_unit_cell_and_grid=false *.pdb *.map
