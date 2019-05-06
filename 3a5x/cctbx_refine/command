@@ -1,0 +1,2 @@
+qr.refine placed_model_complete.pdb EMD-1641.map restraints=cctbx clustering=false gradient_only=true stpmax=3 data_weight=1 skip_weight_search=false max_iterations_refine=400 max_bond_rmsd=0.0001 > log
+
