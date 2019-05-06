@@ -1,0 +1,2 @@
+qr.refine chain_c_box_complete.pdb chain_c_box.ccp4 mode=refine restraints=cctbx clustering=false gradient_only=true stpmax=3 skip_weight_search=true max_iterations_refine=100 number_of_refine_cycles=5 data_weight=0.125 
+
