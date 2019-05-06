@@ -1,0 +1,1 @@
+qr.refine A_box_complete.pdb A_box.ccp4 mode=refine restraints=qm engine_name=xtb quantum.nproc=1 parallel.nproc=12 clustering=true gradient_only=true stpmax=0.5 skip_weight_search=true max_iterations_refine=50 number_of_refine_cycles=4 data_weight=0.5 > log
