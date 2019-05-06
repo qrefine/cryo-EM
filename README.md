@@ -11,21 +11,21 @@ method         | bond   | angle |clashscore |rama_outlier| rama_favor|rotamer | 
 :--:           | :--:   | :--:  |   :--:    |   :--:     |   :--:    |:--:    |:--:
 initial        | 0.004  | 1.007 |   50.84   |   4.49     |   85.39   | 5.48   | 0.6747
 cctbx_refine   | 0.002  | 0.749 |   3.48    |   0        |   98.88   | 4.11   | 0.6553
-xtb_refine     | 0.011  | 1.67  |   3.5     |   0        |   91.01   | 4.11   | 0.6530
+xtb_refine     | 0.012  | 1.705 |   3.48    |   0        |   94.38   | 4.11   | 0.6546
 terachem_refine| 0.013  | 1.535 |   0.70    |   0        |   100.00  | 1.37   | 0.6386
 ## 5fn5_chain_c(3787 atoms)
 method         | bond   | angle |clashscore |rama_outlier| rama_favor|rotamer | CC_mask
 :--:           | :--:   | :--:  |   :--:    |   :--:     |   :--:    |:--:    |:--:
 initial        | 0.012  | 2.001 |  14.27    |    2.07    |   90.87   | 18.13  | 0.6430
 cctbx_refine   | 0.002  | 0.51  |   5.0     |    0.83    |   91.70   | 7.25   | 0.6540
-xtb_refine     | 0.009  | 1.5   |    2.9    |    0.41    |   90.04   |  8.29  | 0.6555
+xtb_refine     | 0.009  | 1.5   |    2.9    |    0.41    |   90.04   |  8.29  | 0.65
 terachem_refine| 0.013  | 1.58  |    1.8    |    0       |   96.28   | 11.92  | 0.6441
 # 5ly6(7399 atoms)
 method         | bond   | angle |clashscore |rama_outlier| rama_favor|rotamer | CC_mask
 :--:           | :--:   | :--:  |   :--:    |   :--:     |   :--:    |:--:    |:--:
 initial        | 0.005  | 0.942 |   92.04   |    4.9     |   74.2    | 36.08  | 0.6239
 cctbx_refine   | 0.002  | 0.48  |    4.6    |    4.26    |  77.61    |  10.41 |  0.6564
-xtb_refine     | 0.011  | 1.86  |    1.8    |    2.13    |   87.21   |  7.75  |   0.6623
+xtb_refine     | 0.011  | 1.86  |    1.8    |    2.13    |   87.21   |  7.75  |  0.6623
 terachem_refine| 0.012  | 1.61  |    1.08   |    2.13    |   89.98   |  11.14 | 0.6394
 ### 6i5a(2396 atoms)
 method         | bond   | angle |clashscore |rama_outlier| rama_favor|rotamer | CC_mask
