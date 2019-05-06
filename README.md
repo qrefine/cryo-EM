@@ -4,7 +4,7 @@ method         | bond   | angle |clash   |rama_out| rama_favor|rotamer | CC_mask
 :--:           | :--:   | :--:  |   :--: |   :--: |   :--:    |:--:    |:--:
 initial        | 0.013  | 1.530 | 117.79 |   2.85 |   86.59   | 8.72   | 0.292
 cctbx_refine   | 0.001  | 0.4   |  2.36  |   0.61 |   93.50   |  2.05  | 0.3025
-xtb_refine     | 0.010  | 1.70  |  2.5   |   0.81 |   93.90   |  4.36  | 0.3050
+xtb_refine     | 0.010  | 1.73  |  3.3   |   0.61 |   94.31   |  3.33  | 0.3311
 terachem_refine| 0.014  | 1.4   |  1.53  |   0    |   96.75   |  4.62  | 0.3051
 ## 3j63_chain_A (1436 atoms)
 method         | bond   | angle | clash |rama_out| rama_favor|rotamer | CC_mask
