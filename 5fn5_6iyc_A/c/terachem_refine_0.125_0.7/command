@@ -1,0 +1,2 @@
+nohup qr.refine chain_c_box.ccp4 chain_c_box_complete.pdb restraints=qm engine_name=terachem clustering=true gradient_only=true stpmax=0.7 parallel.method=lsf qsub_command='bsub -n 4 -q gpu' data_weight=0.125 skip_weight_search=true max_iterations_refine=50  > log 2>&1 &
+
