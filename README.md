@@ -19,7 +19,7 @@ method         | bond   | angle |clash  |rama_out| rama_favor|rotamer | CC_mask
 initial        | 0.012  | 2.001 | 14.27 | 2.07   |   90.87   | 18.13  | 0.6430
 cctbx_refine   | 0.003  | 1.19  | 5.81  | 0.83   |   92.53   | 8.29   | 0.6645
 xtb_refine     | 0.009  | 1.5   | 2.9   | 0.41   |   90.04   |  8.29  | 0.65
-terachem_refine| 0.013  | 1.58  | 1.8   |  0     |   96.28   | 11.92  | 0.6441
+terachem_refine| 0.012  | 1.741 | 0     |  0     |   95.85   | 7.77   | 0.6648
 # 5ly6(7399 atoms)
 method         | bond   | angle | clash |rama_out| rama_favor|rotamer | CC_mask
 :--:           | :--:   | :--:  |  :--: |  :--:  |   :--:    |:--:    |:--:
