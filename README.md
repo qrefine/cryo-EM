@@ -1,32 +1,32 @@
 # cryo-EM
 ## 3a5x (7194 atoms)
-method         | bond   | angle |clash   |rama_out| rama_favor|rotamer | RMRinger |CC_mask
+method         | bond   | angle |clash   |rama_out| rama_favor|rotamer | EMRinger |CC_mask
 :--:           | :--:   | :--:  |   :--: |   :--: |   :--:    |:--:    |:--:      |:--:
 initial        | 0.013  | 1.530 | 117.79 |   2.85 |   86.59   | 8.72   |   0.80   |0.292
 cctbx_refine   | 0.002  | 1.14  |  3.9   |   0.41 |   92.28   |  2.56  |  -0.13   |0.3091
-xtb_refine     | 0.010  | 1.73  |  3.3   |   0.61 |   94.31   |  3.33  |     0.46     |0.3311
-terachem_refine| 0.014  | 1.4   |  1.53  |   0    |   96.75   |  4.62  |      -0.11    |0.3051
+xtb_refine     | 0.010  | 1.73  |  3.3   |   0.61 |   94.31   |  3.33  |   0.40   |0.3311
+terachem_refine| 0.014  | 1.4   |  1.53  |   0    |   96.75   |  4.62  | -0.11/0.89 |0.3051
 ## 3j63_chain_A (1436 atoms)
-method         | bond   | angle | clash |rama_out| rama_favor|rotamer | CC_mask
-:--:           | :--:   | :--:  | :--:  |  :--:  |   :--:    |:--:    |:--:
-initial        | 0.004  | 1.007 | 50.84 |  4.49  |   85.39   | 5.48   | 0.6747
-cctbx_refine   | 0.002  | 0.749 | 3.48  |  0     |   98.88   | 4.11   | 0.6553
-xtb_refine     | 0.012  | 1.705 | 3.48  |  0     |   94.38   | 4.11   | 0.6546
-terachem_refine| 0.013  | 1.535 |0.70   |  0     |   100.00  | 1.37   | 0.6386
+method         | bond   | angle | clash |rama_out| rama_favor|rotamer | EMRinger |CC_mask
+:--:           | :--:   | :--:  | :--:  |  :--:  |   :--:    |:--:    |:--:      |:--:
+initial        | 0.004  | 1.007 | 50.84 |  4.49  |   85.39   | 5.48   | 2.36     |0.6747
+cctbx_refine   | 0.002  | 0.749 | 3.48  |  0     |   98.88   | 4.11   | 1.17     |0.6553
+xtb_refine     | 0.012  | 1.705 | 3.48  |  0     |   94.38   | 4.11   | 1.83     |0.6546
+terachem_refine| 0.013  | 1.535 |0.70   |  0     |   100.00  | 1.37   | 1.17     |0.6386
 ## 5fn5_chain_c(3787 atoms)
-method         | bond   | angle |clash  |rama_out| rama_favor|rotamer | CC_mask
-:--:           | :--:   | :--:  |  :--: | :--:   |   :--:    |:--:    |:--:
-initial        | 0.012  | 2.001 | 14.27 | 2.07   |   90.87   | 18.13  | 0.6430
-cctbx_refine   | 0.003  | 1.19  | 5.81  | 0.83   |   92.53   | 8.29   | 0.6645
-xtb_refine     | 0.009  | 1.5   | 2.9   | 0.41   |   90.04   |  8.29  | 0.65
-terachem_refine| 0.012  | 1.741 | 0     |  0     |   95.85   | 7.77   | 0.6648
+method         | bond   | angle |clash  |rama_out| rama_favor|rotamer | EMRinger |CC_mask
+:--:           | :--:   | :--:  |  :--: | :--:   |   :--:    |:--:    |:--:      |:--:
+initial        | 0.012  | 2.001 | 14.27 | 2.07   |   90.87   | 18.13  |   0.79 |0.6430
+cctbx_refine   | 0.003  | 1.19  | 5.81  | 0.83   |   92.53   | 8.29   |   -0.10|0.6645
+xtb_refine     | 0.009  | 1.5   | 2.9   | 0.41   |   90.04   |  8.29  |   0.79 |0.65
+terachem_refine| 0.012  | 1.741 | 0     |  0     |   95.85   | 7.77   |   0.79 |0.6648
 # 5ly6(7399 atoms)
-method         | bond   | angle | clash |rama_out| rama_favor|rotamer | CC_mask
-:--:           | :--:   | :--:  |  :--: |  :--:  |   :--:    |:--:    |:--:
-initial        | 0.005  | 0.942 | 92.04 |   4.9  |   74.2    | 36.08  | 0.6239
-cctbx_refine   | 0.002  | 0.48  |  4.6  |   4.2  |   77.61   |  10.41 | 0.6564
-xtb_refine     | 0.011  | 1.86  |  1.8  |   2.13 |   87.21   |  7.75  | 0.6623
-terachem_refine| 0.012  | 1.61  |  1.08 |   2.1  |   89.98   |  11.14 | 0.6394
+method         | bond   | angle | clash |rama_out| rama_favor|rotamer | EMRinger  |CC_mask
+:--:           | :--:   | :--:  |  :--: |  :--:  |   :--:    |:--:    |:--:     |:--:
+initial        | 0.005  | 0.942 | 92.04 |   4.9  |   74.2    | 36.08  |  0.49 |0.6239
+cctbx_refine   | 0.002  | 0.48  |  4.6  |   4.2  |   77.61   |  10.41 |    ??  |0.6564
+xtb_refine     | 0.011  | 1.86  |  1.8  |   2.13 |   87.21   |  7.75  |  0.93 |0.6623
+terachem_refine| 0.012  | 1.61  |  1.08 |   2.1  |   89.98   |  11.14 |  0.93 |0.6394
 ### 6i5a(2396 atoms)
 method         | bond   | angle |clash |rama_out | rama_favor|rotamer | EMRinger|CC_mask
 :--:           | :--:   | :--:  | :--: |   :--:  |   :--:    |:--:    |:--:      |:--:
