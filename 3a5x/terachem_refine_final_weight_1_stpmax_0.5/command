@@ -1,0 +1,2 @@
+nohup qr.refine placed_model_complete.pdb EMD-1641.map restraints=qm engine_name=terachem clustering=true gradient_only=true stpmax=0.5 parallel.method=lsf qsub_command='bsub -n 4 -q gpu' data_weight=1 skip_weight_search=true max_iterations_refine=50 > log 2>&1 &
+
