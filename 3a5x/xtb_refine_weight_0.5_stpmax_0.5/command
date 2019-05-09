@@ -1,0 +1,2 @@
+qr.refine EMD-1641.map placed_model_complete.pdb mode=refine restraints=qm engine_name=xtb quantum.nproc=2 parallel.nproc=18 clustering=true max_bond_rmsd=0.005 gradient_only=true stpmax=0.5 max_iterations_refine=50 skip_weight_search=true number_of_refine_cycles=30 data_weight=0.5 > log
+
