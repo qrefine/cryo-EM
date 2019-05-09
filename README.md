@@ -1,11 +1,11 @@
 # cryo-EM
 ## 3a5x (7194 atoms)
-method         | bond   | angle |clash   |rama_out| rama_favor|rotamer | CC_mask
-:--:           | :--:   | :--:  |   :--: |   :--: |   :--:    |:--:    |:--:
-initial        | 0.013  | 1.530 | 117.79 |   2.85 |   86.59   | 8.72   | 0.292
-cctbx_refine   | 0.002  | 1.14  |  3.9   |   0.41 |   92.28   |  2.56  | 0.3091
-xtb_refine     | 0.010  | 1.73  |  3.3   |   0.61 |   94.31   |  3.33  | 0.3311
-terachem_refine| 0.014  | 1.4   |  1.53  |   0    |   96.75   |  4.62  | 0.3051
+method         | bond   | angle |clash   |rama_out| rama_favor|rotamer | RMRinger |CC_mask
+:--:           | :--:   | :--:  |   :--: |   :--: |   :--:    |:--:    |:--:      |:--:
+initial        | 0.013  | 1.530 | 117.79 |   2.85 |   86.59   | 8.72   |   0.80   |0.292
+cctbx_refine   | 0.002  | 1.14  |  3.9   |   0.41 |   92.28   |  2.56  |  -0.13   |0.3091
+xtb_refine     | 0.010  | 1.73  |  3.3   |   0.61 |   94.31   |  3.33  |     0.46     |0.3311
+terachem_refine| 0.014  | 1.4   |  1.53  |   0    |   96.75   |  4.62  |      -0.11    |0.3051
 ## 3j63_chain_A (1436 atoms)
 method         | bond   | angle | clash |rama_out| rama_favor|rotamer | CC_mask
 :--:           | :--:   | :--:  | :--:  |  :--:  |   :--:    |:--:    |:--:
@@ -28,11 +28,11 @@ cctbx_refine   | 0.002  | 0.48  |  4.6  |   4.2  |   77.61   |  10.41 | 0.6564
 xtb_refine     | 0.011  | 1.86  |  1.8  |   2.13 |   87.21   |  7.75  | 0.6623
 terachem_refine| 0.012  | 1.61  |  1.08 |   2.1  |   89.98   |  11.14 | 0.6394
 ### 6i5a(2396 atoms)
-method         | bond   | angle |clash |rama_out | rama_favor|rotamer | CC_mask
-:--:           | :--:   | :--:  | :--: |   :--:  |   :--:    |:--:    |:--:
-initial        | 0.012  | 1.840 | 6.69 |   1.32  |  97.35    |  0.74  | 0.8156
-xtb_refine     | 0.011  | 1.590 | 2.09 |   1.32  |  94.70    |  0.74  | 0.8066
-terachem_refine| 0.010  | 1.407 | 0.84 |   1.32  |  98.68    |  0.00  | 0.8106
+method         | bond   | angle |clash |rama_out | rama_favor|rotamer | EMRinger|CC_mask
+:--:           | :--:   | :--:  | :--: |   :--:  |   :--:    |:--:    |:--:      |:--:
+initial        | 0.012  | 1.840 | 6.69 |   1.32  |  97.35    |  0.74  |    3.94  |0.8156 
+xtb_refine     | 0.011  | 1.590 | 2.09 |   1.32  |  94.70    |  0.74  |    3.57  |0.8066
+terachem_refine| 0.010  | 1.407 | 0.84 |   1.32  |  98.68    |  0.00  |    3.99  |0.8106
 ## command used
 0. if ligand included, phenix.pdbtool keep="protein" *.pdb
 1. phenix.map_box mask_atoms=true soft_mask=true keep_origin=false keep_input_unit_cell_and_grid=false *.pdb *.map
