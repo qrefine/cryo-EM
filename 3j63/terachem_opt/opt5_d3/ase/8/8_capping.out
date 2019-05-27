@@ -1,0 +1,323 @@
+Startfile from command line: /home/lum/3j63/opt5_d3/ase/8/8_capping.sp
+
+
+       ***********************************************************
+       *                    TeraChem v1.93P                      *
+       *                 Hg Version: 79b87f121f2d                *
+       *                   Production Version                    *
+       *                Compiled without textures                *
+       *           Chemistry at the Speed of Graphics!           *
+       ***********************************************************
+       * This program may only be used in connection with        *
+       * a valid license from PetaChem, LLC. Use of this program *
+       * or results thereof indicates acceptance of all terms    *
+       * and conditions stated in the license and that a valid   *
+       * license agreement between the user and PetaChem, LLC    *
+       * exists. PetaChem, LLC does not warrant the correctness  *
+       * of results or their suitability for any purpose.        *
+       * Please email bugs, suggestions, and comments to         *
+       *                  help@petachem.com                      *
+       *                                                         *
+       ***********************************************************
+
+
+       ***********************************************************
+       *  Compiled by toddmtz      Wed Aug 16 03:32:31 PDT 2017  *
+       *  Supported architectures: sm_20 sm_30 sm_50 sm_60       *
+       *  Cuda compilation tools, release 8.0, V8.0.44           *
+       ***********************************************************
+
+
+ Job started   Sun May 19 11:23:30 2019
+ On cu35 (available memory: 59812 MB)
+
+######################################### RUNTIME INFO ##########################################
+/public/qmsoft/TeraChem/bin/terachem /home/lum/3j63/opt5_d3/ase/8/8_capping.sp 
+
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  396.26  Mon Apr 30 18:01:39 PDT 2018
+GCC version:  gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) 
+
+	linux-vdso.so.1 (0x00007ffd4bb29000)
+	libcurl.so.4 => /lib64/libcurl.so.4 (0x00002b968dbb7000)
+	libintbox.so.1 => /public/qmsoft/TeraChem/lib/libintbox.so.1 (0x00002b968de1f000)
+	libthcbox.so.1 => /public/qmsoft/TeraChem/lib/libthcbox.so.1 (0x00002b96ada2d000)
+	libgridbox.so.1 => /public/qmsoft/TeraChem/lib/libgridbox.so.1 (0x00002b96af597000)
+	libdftbox.so.1 => /public/qmsoft/TeraChem/lib/libdftbox.so.1 (0x00002b96afa88000)
+	libcublas.so.8.0 => /public/qmsoft/TeraChem/lib/libcublas.so.8.0 (0x00002b96afd99000)
+	libcufft.so.8.0 => /public/qmsoft/TeraChem/lib/libcufft.so.8.0 (0x00002b96b2749000)
+	libcuda.so.1 => /public/qmsoft/TeraChem/lib/libcuda.so.1 (0x00002b96bb597000)
+	libcudart.so.8.0 => /public/qmsoft/TeraChem/lib/libcudart.so.8.0 (0x00002b96bc517000)
+	libcrypto.so.10 => /lib64/libcrypto.so.10 (0x00002b96bc77d000)
+	libssl.so.10 => /lib64/libssl.so.10 (0x00002b96bcb64000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002b96bcdd1000)
+	libcilkrts.so.5 => /public/qmsoft/TeraChem/lib/libcilkrts.so.5 (0x00002b96bd0d3000)
+	libstdc++.so.6 => /lib64/libstdc++.so.6 (0x00002b96bd314000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00002b96bd61c000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00002b96bd832000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002b96bda50000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002b96bdc54000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002b968d994000)
+	libidn.so.11 => /lib64/libidn.so.11 (0x00002b96be001000)
+	libssh2.so.1 => /lib64/libssh2.so.1 (0x00002b96be234000)
+	libssl3.so => /lib64/libssl3.so (0x00002b96be45e000)
+	libsmime3.so => /lib64/libsmime3.so (0x00002b96be6a0000)
+	libnss3.so => /lib64/libnss3.so (0x00002b96be8c7000)
+	libnssutil3.so => /lib64/libnssutil3.so (0x00002b96bebed000)
+	libplds4.so => /lib64/libplds4.so (0x00002b96bee19000)
+	libplc4.so => /lib64/libplc4.so (0x00002b96bf01d000)
+	libnspr4.so => /lib64/libnspr4.so (0x00002b96bf222000)
+	libgssapi_krb5.so.2 => /lib64/libgssapi_krb5.so.2 (0x00002b96bf460000)
+	libkrb5.so.3 => /lib64/libkrb5.so.3 (0x00002b96bf6ac000)
+	libk5crypto.so.3 => /lib64/libk5crypto.so.3 (0x00002b96bf991000)
+	libcom_err.so.2 => /lib64/libcom_err.so.2 (0x00002b96bfbc3000)
+	liblber-2.4.so.2 => /lib64/liblber-2.4.so.2 (0x00002b96bfdc7000)
+	libldap-2.4.so.2 => /lib64/libldap-2.4.so.2 (0x00002b96bffd6000)
+	libz.so.1 => /lib64/libz.so.1 (0x00002b96c0229000)
+	librt.so.1 => /lib64/librt.so.1 (0x00002b96c043f000)
+	libnvidia-fatbinaryloader.so.396.26 => /lib64/libnvidia-fatbinaryloader.so.396.26 (0x00002b96c0647000)
+	libkrb5support.so.0 => /lib64/libkrb5support.so.0 (0x00002b96c0893000)
+	libkeyutils.so.1 => /lib64/libkeyutils.so.1 (0x00002b96c0aa2000)
+	libresolv.so.2 => /lib64/libresolv.so.2 (0x00002b96c0ca6000)
+	libsasl2.so.3 => /lib64/libsasl2.so.3 (0x00002b96c0ebd000)
+	libselinux.so.1 => /lib64/libselinux.so.1 (0x00002b96c10da000)
+	libcrypt.so.1 => /lib64/libcrypt.so.1 (0x00002b96c12ff000)
+	libpcre.so.1 => /lib64/libpcre.so.1 (0x00002b96c1536000)
+	liblzma.so.5 => /lib64/liblzma.so.5 (0x00002b96c1797000)
+#################################################################################################
+
+       ********************** License Check **********************
+       * Use license from: /public/qmsoft/TeraChem/license.dat
+       * Available Host id: 0CC47AE5BB3E
+       * Available Host id: 0CC47AE5BB3F
+       * Available Host id: 5254009482E9
+       * Available Host id: 5254009482E9
+       * License Host id: 0CC47AE5BB3E
+       * License expires: 2019-10-21
+       ********************** License OK *************************
+  _________________________________
+ |         DFTD3 V3.0 Rev 2        |
+ | S.Grimme, University Bonn       |
+ |           Aug  2013             |
+  _________________________________
+ 
+ Please cite DFT-D3 work done with this code as:
+ S. Grimme, J. Antony, S. Ehrlich and H. Krieg,
+ J. Chem. Phys. 132 (2010), 154104
+ If used with BJ-damping cite also
+ S. Grimme, S. Ehrlich and L. Goerigk,
+ J. Comput. Chem. 32 (2011), 1456-1465
+ For DFT-D2 the reference is
+ S. Grimme, J. Comput. Chem., 27 (2006), 1787-1799
+ 
+Scratch directory: /tmp/lum/3j63/opt5_d3/ase/8/scr
+Random number seed: 430118737
+
+XYZ coordinates /home/lum/3j63/opt5_d3/ase/8/8_capping.xyz
+Molden File Output: /tmp/lum/3j63/opt5_d3/ase/8/scr/8_capping.molden
+Using basis set: 6-31g
+Spin multiplicity: 1
+DIIS will use up to 10 vectors.
+WF convergence threshold: 3.00e-05
+Using DIIS algorithm to converge WF
+Maximum number of SCF iterations: 300
+Incremental fock with rebuild every 8 iterations
+Will switch to conventional Fock if diffuse functions are detected
+X-matrix tolerance: 1.00e-04
+PRECISION: DYNAMIC
+DFT Functional requested: hf
+Method: Hartree-Fock  with dispersion correction
+Wavefunction: RESTRICTED
+Initial guess generated by maximum overlap
+
+********************************************
+**** SINGLE POINT GRADIENT CALCULATIONS ****
+********************************************
+SCF:   Initial guess is taken from previous step
+COSMO model for polarizable continuum model enabled
+
+using 4 out of 4 CUDA devices
+   Device 0:  GeForce GTX 1080 Ti, 11178MB, CC 6.1 -- CPU THREAD 0
+   Device 1:  GeForce GTX 1080 Ti, 11178MB, CC 6.1 -- CPU THREAD 1
+   Device 2:  GeForce GTX 1080 Ti, 11178MB, CC 6.1 -- CPU THREAD 2
+   Device 3:  GeForce GTX 1080 Ti, 11178MB, CC 6.1 -- CPU THREAD 3
+-------------------------------------------------------------------
+Compiled with MAGMA support.  MAGMA parameters:
+    Matrices larger than 5000 square will be treated with MAGMA
+       (Change by setting the MagmaMinN environment variable)
+    Magma will use 1 out of 4 GPUs
+       (Change by setting the MagmaNGPUs environment variable)
+-------------------------------------------------------------------
+ CPU Memory Available: 8018.12 MegaWords 
+ GPU Memory Available: 1141.31 MegaWords 
+ Maximum recommended basis set size: 12200 basis functions
+ (limited by GPU memory)
+-------------------------------------------------------------------
+Not using d-functions. Configuring GPUs accordingly.
+0: CUBLAS initialized, available GPU memory: 8344MB
+1: CUBLAS initialized, available GPU memory: 8170MB
+2: CUBLAS initialized, available GPU memory: 8340MB
+3: CUBLAS initialized, available GPU memory: 8340MB
+
+
+Basis set:       6-31g
+Total atoms:     69
+Total charge:    0
+Total electrons: 270 (135-alpha, 135-beta)
+Number electrons modeled by ECPs: 0
+Total orbitals:  390
+Total AO shells: 246 (174 S-shells; 72 P-shells; 0 D-shells; 0 F-shells; 0 G-shells)
+Spin multiplicity: 1
+Nuclear repulsion energy (QM atoms): 4231.098824195731 a.u.
+
+DFTD Energy:    -0.5555577 hartree
+=COSMO= Number of H atoms in QM atoms:33
+=COSMO= Number of Heavy atoms in QM atoms:36
+reached first line of InitCosmoSwigNoMatrix
+q is allocated
+B is allocated
+Bz is allocated
+z is allocated
+c is allocated
+=COSMO= No Matrix Cosmo Initialization finished.
+=COSMO= ++++++++++++++++++++++++++++++ COSMO parameters ++++++++++++++++++++++++++++++
+=COSMO= I. Cavity Information:
+=COSMO= SAS(Solvent accesible surface) initialization finished
+=COSMO= Time for initializing Molecular Surface:0.01555300 (sec)
+=COSMO= Time for initializing cosmo calculation:0.00421500 (sec)
+=COSMO= Cavity effective radius(Angstrom) (r_solv+r_vdw-dsc) was written into /tmp/lum/3j63/opt5_d3/ase/8/scr/ratom.txt
+=COSMO= Solvent Dielectric Constant:78.390000
+=COSMO= Cosmo Solvent radius:0.000000
+=COSMO= Cosmo charge scaling method:0
+=COSMO= Cavity built with Lebedev Grid
+=COSMO= Grid points/QM Hydrogen: 110
+=COSMO= Grid points/QM Heavy atom: 110
+=COSMO= Herbert Switching-Gaussian method turned on
+=COSMO= After removing points inside of SAS:
+=COSMO= Total number of segments on molecular surface:3752
+=COSMO= Number of segments belonging to QM atoms:3752
+=COSMO= Total surface area of cavity: 546.6038(Angstrom^2)
+=COSMO= Total volume of cavity: 314.5867 (Angstrom^3)
+=COSMO= II. COSMO integral options:
+=COSMO= Building COMSO c vector with original algorithm
+=COSMO= COSMO one-electron integral threshold: 1e-12 
+=COSMO= III. Linear solver options:
+=COSMO= Initialize COSMO for A matrix in no matrix storage form
+=COSMO= CG precondtioner:Jacobi
+=COSMO= Tight CG convergence threshold:1e-06
+=COSMO= CG dynamic threshold: on
+=COSMO= Adjust CG convergence threshold dynamically
+=COSMO= IV. PCM field read/write options:
+=COSMO= PCM field is not written to files
+=COSMO= No PCM field file is read in
+=COSMO= ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy              E_PCM      Time(s)
+---------------------------------------------------------------------------------------
+         >>> Purifying P... IDMP = 1.33e-14 <<<
+THRESPDP set to 1.00e+00
+   1     0.2577843872   -1747.4887348371   -1747.4887348371     -0.2307547941    0.57  
+   2     0.2447362736      -8.6741946902   -1756.1629295273     -0.1916754373    0.55  
+   3     0.0550195870      -1.1120484235   -1757.2749779508     -0.2027687723    0.50  
+   4     0.0231053333      -0.1419775536   -1757.4169555043     -0.1913254433    0.51  
+   5     0.0068757787      -0.0211173304   -1757.4380728347     -0.1988597147    0.46  
+   6     0.0038520657      -0.0022641388   -1757.4403369736     -0.1998942121    0.48  
+   7     0.0014675768      -0.0004316030   -1757.4407685766     -0.2005755871    0.48  
+THRESPDP set to 8.75e-04
+   8     0.0006080347      +0.0000413818   -1757.4407271948     -0.2008025035    0.55  
+   9     0.0002176423      -0.0000117445   -1757.4407389393     -0.2008859601    0.48  
+  10     0.0000763472      -0.0000018284   -1757.4407407677     -0.2009173185    0.46  
+  11     0.0000491137      +0.0000000444   -1757.4407407233     -0.2009257458    0.48  
+  12     0.0000290135      +0.0000000986   -1757.4407406247     -0.2009290533    0.35  
+---------------------------------------------------------------------------------------
+FINAL ENERGY: -1757.4407406247 a.u.
+WARNING: Final energy is higher than the lowest energy by   2.7952e-05.
+DISPERSION CONTRIBUTION TO ENERGY: -0.5555576678 a.u.
+C-PCM contribution to final energy:-0.2009290533 a.u. ( already included in final energy )
+Computing C-PCM contribution to gradient...
+CENTER OF MASS: {19.254146, 31.266755, 28.580253} ANGS
+DIPOLE MOMENT: {-13.805476, -20.569152, -16.886962} (|D| = 29.980838) DEBYE
+Cannot open /tmp/lum/3j63/opt5_d3/ase/8/scr
+Writing out molden info
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0216923871     0.0331215421    -0.0918168567
+   -0.0021828254     0.0132780953    -0.0115573552
+    0.0043209857     0.0048430532     0.0040619138
+   -0.0002745491    -0.0008597657    -0.0035595559
+    0.0061071986    -0.0086964092    -0.0066482348
+    0.0007112239    -0.0003998613    -0.0020657159
+   -0.0006498939    -0.0020797486    -0.0004588707
+    0.0027648138     0.0045376178     0.0023027279
+   -0.0036208892    -0.0009225594    -0.0112934837
+   -0.0014353012     0.0009770732     0.0041212637
+    0.0094303804     0.0191393246     0.0041531885
+    0.0009453004     0.0022747433    -0.0198027110
+    0.0007856593    -0.0003849139     0.0002757137
+   -0.0007576776    -0.0005307744     0.0001947605
+    0.0026257022     0.0014775095    -0.0009357092
+    0.0003203433    -0.0004083639     0.0002292702
+   -0.0004307495     0.0001040959     0.0011493196
+    0.0001693114    -0.0001328303    -0.0006205384
+    0.0000212621     0.0005570869     0.0001443021
+   -0.0001640744    -0.0011915120     0.0009776942
+   -0.0005170305    -0.0009107472    -0.0013147148
+    0.0011581364     0.0004717085    -0.0011638022
+    0.0017916733     0.0013962767     0.0017651241
+   -0.0083400436    -0.0203573773     0.0021084987
+    0.0011121029    -0.0011597642     0.0008279637
+   -0.0005673449    -0.0003276050    -0.0005474523
+    0.0005377056     0.0004463038    -0.0001551991
+   -0.0005034080    -0.0004617591    -0.0000327269
+    0.0001012796    -0.0005099439    -0.0005391576
+    0.0003428397    -0.0008245212    -0.0002662458
+    0.0005924573     0.0001435102     0.0002447454
+    0.0000904411     0.0001302190    -0.0004004195
+   -0.0003127436    -0.0002422159    -0.0002203663
+   -0.0006736562     0.0003479572    -0.0003102344
+   -0.0001998534    -0.0001666577     0.0001026178
+    0.0001041912     0.0002744214     0.0004450812
+    0.0000395285    -0.0000308327    -0.0001725151
+   -0.0000141285     0.0000159933    -0.0001759574
+   -0.0003506067     0.0004994549     0.0001010927
+    0.0009724794     0.0008231374     0.0003156607
+   -0.0005107271    -0.0002358530     0.0008773435
+   -0.0004097707    -0.0003125937     0.0017535115
+   -0.0001081856     0.0009437387    -0.0006657995
+   -0.0006818510    -0.0002428890     0.0001921729
+   -0.0001616165     0.0002152272    -0.0000573490
+    0.0004756908     0.0002614274     0.0001070915
+    0.0009326038    -0.0013272683    -0.0011489931
+   -0.0066177159    -0.0019695033     0.0030808464
+    0.0451635685    -0.0806773269    -0.0012805130
+    0.0074172710     0.0238292550    -0.0071478152
+   -0.0016743135     0.0001542908     0.0002809369
+    0.0001391060     0.0019730770    -0.0016316487
+    0.0010516671    -0.0018009660     0.0010898283
+   -0.0009811775    -0.0011216258     0.0010916546
+   -0.0012813031    -0.0012978270     0.0006115993
+    0.0011140834     0.0008234356    -0.0003703900
+    0.0010317509    -0.0009944600     0.0002596013
+   -0.0002685343     0.0011425507    -0.0005278021
+    0.0008402888    -0.0002551057     0.0006465023
+   -0.0007091014     0.0014540546    -0.0004759709
+    0.0002056122    -0.0000843110     0.0001522295
+   -0.0010366235     0.0002512762     0.0000729480
+   -0.0003365538     0.0004077125     0.0003584307
+   -0.0000568387     0.0000818037    -0.0004975370
+    0.0001454620     0.0008241626     0.0000058357
+   -0.0005618847     0.0000618053    -0.0005364448
+   -0.0003436176    -0.0009550484     0.0003104108
+    0.0084761051    -0.0429327736     0.1284844568
+   -0.0436112472     0.0575227764     0.0055017488
+---------------------------------------------------
+Net gradient:  9.309966e-10  3.454791e-09  8.019213e-10
+Net torque:   -5.718599e-05  1.274568e-03  1.023207e-03
+
+Total processing time: 6.77 sec 
+
+ Job finished: Sun May 19 11:23:48 2019
+
