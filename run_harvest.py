@@ -19,7 +19,7 @@ def get_latest(files):
 def run():
   # Must run in cryo-EM folder!
   root = os.getcwd()
-  folders = ["6i5a","3j63","5fn5_6iyc_A","3a5x","5ly6",   "3j06","5xsy","3los"]
+  folders = ["6i5a","3j63","5fn5_6iyc_A/c","3a5x","5ly6",   "3j06","5xsy","3los"]
   for folder in folders:
     folder_1 = "/".join([root, folder])
     print folder_1, "-"*(79-len(folder_1))
@@ -29,6 +29,7 @@ def run():
     for sub_ in os.listdir(folder_1):
       sub = "/".join([folder_1, sub_])
       if(not os.path.isdir(sub)): continue
+      if "opt" in sub: continue
       refined = "/".join([sub,"real_space_refined.pdb"])
       msg=""
       if(not os.path.isfile(refined)):
