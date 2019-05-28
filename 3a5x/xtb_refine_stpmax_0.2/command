@@ -1,2 +1,0 @@
-nohup qr.refine placed_model_complete.pdb EMD-1641.map restraints=qm engine_name=xtb clustering=true quantum.nproc=2 parallel.nproc=36 gradient_only=true maxnum_residues_in_cluster=15 stpmax=0.2 max_iterations_refine=250 skip_weight_search=false number_of_refine_cycles=8 max_bond_rmsd=0.001 data_weight=1 > log 2>&1 &
-
