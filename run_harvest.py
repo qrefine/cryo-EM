@@ -19,7 +19,7 @@ def get_latest(files):
 def run():
   # Must run in cryo-EM folder!
   root = os.getcwd()
-  folders = ["6i5a","3j63","5fn5_6iyc_A/c","3a5x","5ly6",   "3j06","5xsy","3los"]
+  folders = ["6i5a","3j63","5fn5_6iyc_A/c","3a5x","5ly6"]
   for folder in folders:
     folder_1 = "/".join([root, folder])
     print folder_1, "-"*(79-len(folder_1))
