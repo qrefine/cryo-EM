@@ -1,2 +1,0 @@
-qr.refine chain_c_box_complete.pdb chain_c_box.ccp4 mode=refine restraints=qm engine_name=xtb quantum.nproc=2 parallel.nproc=15 clustering=true gradient_only=true stpmax=0.4 skip_weight_search=false max_iterations_refine=250 max_bond_rmsd=0.005 number_of_refine_cycles=5 data_weight=2 > log
-
