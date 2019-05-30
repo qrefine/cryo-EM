@@ -64,6 +64,7 @@ Running refinement
      altloc_method = *average subtract
      g_scan = 10 15 20
      g_mode = None
+     save_clusters = True
    }
    restraints = *cctbx qm
    quantum {
@@ -84,17 +85,17 @@ Running refinement
      mode = opt *refine gtest
      number_of_macro_cycles = 1
      number_of_weight_search_cycles = 50
-     number_of_refine_cycles = 5
+     number_of_refine_cycles = 1
      number_of_micro_cycles = 50
      data_weight = 1
      choose_best_use_r_work = False
      skip_weight_search = true
      adjust_restraints_weight_scale_value = 2
      max_iterations_weight = 50
-     max_iterations_refine = 50
+     max_iterations_refine = 150
      use_ase_lbfgs = False
      line_search = True
-     stpmax = 3
+     stpmax = 0.6
      gradient_only = true
      update_all_scales = True
      refine_sites = True
@@ -167,58 +168,22 @@ Initial weight: 1.0 bond rmsd:  0.012
 Final (rmsd, self.weight):  0.012    1.0000
 start refine cycle:  1
   before: bond:  0.012 angle:   1.78 clash:   6.7 rota:  0.74 rama_f:  97.35 rama_o:   1.32 cb:   0.68  0.012
-  after : bond:  0.003 angle:   0.85 clash:   3.3 rota:  0.74 rama_f:  96.69 rama_o:   1.32 cb:   0.00  0.003
+  after : bond:  0.002 angle:   0.58 clash:   1.7 rota:  0.00 rama_f:  95.36 rama_o:   1.32 cb:   0.00  0.002
 Resolution of map is: 2.2972
 Map-model correlation coefficient (CC)
-  CC_mask  : 0.8161
-  CC_volume: 0.6981
-  CC_peaks : 0.0670
-  CC_box   : 0.2836
-start refine cycle:  2
-  before: bond:  0.003 angle:   0.85 clash:   3.3 rota:  0.74 rama_f:  96.69 rama_o:   1.32 cb:   0.00  0.003
-  after : bond:  0.002 angle:   0.67 clash:   1.7 rota:  0.00 rama_f:  94.70 rama_o:   1.32 cb:   0.00  0.002
-Resolution of map is: 2.2972
-Map-model correlation coefficient (CC)
-  CC_mask  : 0.8141
-  CC_volume: 0.6988
-  CC_peaks : 0.0660
-  CC_box   : 0.2831
-start refine cycle:  3
-  before: bond:  0.002 angle:   0.67 clash:   1.7 rota:  0.00 rama_f:  94.70 rama_o:   1.32 cb:   0.00  0.002
-  after : bond:  0.002 angle:   0.63 clash:   1.3 rota:  0.00 rama_f:  96.03 rama_o:   1.32 cb:   0.00  0.002
-Resolution of map is: 2.2972
-Map-model correlation coefficient (CC)
-  CC_mask  : 0.8141
-  CC_volume: 0.6957
-  CC_peaks : 0.0657
-  CC_box   : 0.2830
-start refine cycle:  4
-  before: bond:  0.002 angle:   0.63 clash:   1.3 rota:  0.00 rama_f:  96.03 rama_o:   1.32 cb:   0.00  0.002
-  after : bond:  0.002 angle:   0.59 clash:   1.7 rota:  0.00 rama_f:  94.70 rama_o:   1.32 cb:   0.00  0.002
-Resolution of map is: 2.2972
-Map-model correlation coefficient (CC)
-  CC_mask  : 0.8124
-  CC_volume: 0.6950
-  CC_peaks : 0.0649
-  CC_box   : 0.2826
-start refine cycle:  5
-  before: bond:  0.002 angle:   0.59 clash:   1.7 rota:  0.00 rama_f:  94.70 rama_o:   1.32 cb:   0.00  0.002
-  after : bond:  0.002 angle:   0.57 clash:   1.7 rota:  0.00 rama_f:  95.36 rama_o:   1.32 cb:   0.00  0.002
-Resolution of map is: 2.2972
-Map-model correlation coefficient (CC)
-  CC_mask  : 0.8118
+  CC_mask  : 0.8113
   CC_volume: 0.6942
-  CC_peaks : 0.0645
-  CC_box   : 0.2824
+  CC_peaks : 0.0642
+  CC_box   : 0.2822
 
 GEOMETRY RESTRAINTS LIBRARY: GEOSTD + MONOMER LIBRARY
 DEVIATIONS FROM IDEAL VALUES.
-  BOND      :  0.002   0.017   1231
-  ANGLE     :  0.570   8.120   1683
-  CHIRALITY :  0.028   0.083    198
-  PLANARITY :  0.003   0.031    220
-  DIHEDRAL  :  7.485  67.348    738
-  MIN NONBONDED DISTANCE : 2.369
+  BOND      :  0.002   0.021   1231
+  ANGLE     :  0.583   8.155   1683
+  CHIRALITY :  0.028   0.082    198
+  PLANARITY :  0.004   0.040    220
+  DIHEDRAL  :  7.818  68.486    738
+  MIN NONBONDED DISTANCE : 2.464
 
 MOLPROBITY STATISTICS.
   ALL-ATOM CLASHSCORE : 1.67
@@ -235,8 +200,8 @@ MOLPROBITY STATISTICS.
     TWISTED GENERAL : 0.00 %
 Resolution of map is: 2.2972
 Map-model correlation coefficient (CC)
-  CC_mask  : 0.8118
+  CC_mask  : 0.8113
   CC_volume: 0.6942
-  CC_peaks : 0.0645
-  CC_box   : 0.2824
-Time: 31.0821
+  CC_peaks : 0.0642
+  CC_box   : 0.2822
+Time: 9.5124

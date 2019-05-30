@@ -1,2 +1,2 @@
-qr.refine 6i5a_box_complete.pdb 6i5a_box.ccp4  mode=refine restraints=cctbx clustering=false max_bond_rmsd=0.001 gradient_only=true stpmax=3 max_iterations_refine=50 skip_weight_search=true number_of_refine_cycles=5 data_weight=1 
+qr.refine 6i5a_box_complete.pdb 6i5a_box.ccp4  mode=refine restraints=cctbx clustering=false max_bond_rmsd=0.001 gradient_only=true stpmax=0.6 max_iterations_refine=150 skip_weight_search=true number_of_refine_cycles=1 data_weight=1 > log
 
