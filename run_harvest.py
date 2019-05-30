@@ -5,6 +5,8 @@ import math
 from libtbx import group_args
 import os
 from libtbx.utils import null_out
+from scitbx.array_family import flex
+from libtbx import easy_run
 
 def get_latest(files):
   indices = []
@@ -15,6 +17,22 @@ def get_latest(files):
     except: return None
   last = max(indices)
   return "cycle_%d_refined.pdb"%last
+  
+def show_geo(fn, prefix):
+  pdb_inp = iotbx.pdb.input(file_name=fn)
+  model = mmtbx.model.manager(model_input = pdb_inp, build_grm = True,
+    log = null_out())
+  mes = "%s %s"%(prefix,
+    model.geometry_statistics(use_hydrogens=False).show_short())
+  return model, mes
+  
+def get_z(fn):
+  cmd = " ".join([
+    "phenix.python",
+    "/Users/pafonine/Desktop/QR2019April/WL/paper/rama_z_score.py",
+    fn])
+  r = easy_run.fully_buffered(cmd).raise_if_errors()
+  return round(float(r.stdout_lines[0].split()[1]), 3)
 
 def run():
   # Must run in cryo-EM folder!
@@ -26,6 +44,13 @@ def run():
     if(not os.path.isdir(folder_1)):
       print "  ...does not exist, skip."
       continue
+    #
+    start = "/".join([folder_1, "initial.pdb"])
+    assert os.path.isfile(start)
+    z1 = get_z(start)
+    model_1, mes1 = show_geo(start, prefix="     start:")
+    print mes1, "z_score:", z1
+    #
     for sub_ in os.listdir(folder_1):
       sub = "/".join([folder_1, sub_])
       if(not os.path.isdir(sub)): continue
@@ -50,11 +75,14 @@ def run():
       refined = "/".join([sub1, refined])
       assert os.path.isfile(refined)
       #
-      pdb_inp = iotbx.pdb.input(file_name=refined)
-      model = mmtbx.model.manager(model_input = pdb_inp, build_grm = True,
-        log = null_out())
-      print "      ", os.path.basename(refined), \
-        model.geometry_statistics(use_hydrogens=False).show_short()
+      model_2, mes2 = show_geo(refined, prefix="     final:")
+      z2 = get_z(refined)
+      s1 = model_1.get_sites_cart()
+      s2 = model_2.get_sites_cart()
+      dist = flex.sqrt((s1 - s2).dot())
+      print mes2, "min/max/mean(start, final): %5.3f %5.3f %5.3f"%\
+        dist.min_max_mean().as_tuple(), "z_score:", z2
+      
 
 if(__name__ == "__main__"):
   run()
