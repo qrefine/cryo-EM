@@ -1,0 +1,2 @@
+nohup qr.refine 5ly6_box_complete.pdb 5ly6_box.ccp4 restraints=qm engine_name=terachem clustering=true gradient_only=true stpmax=0.8 parallel.method=lsf qsub_command='bsub -n 4 -q gpu' data_weight=0.1 skip_weight_search=true max_iterations_refine=150 number_of_refine_cycles=3 basis=6-31G > log 2>&1 &
+

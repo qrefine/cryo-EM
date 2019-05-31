@@ -1,0 +1,97 @@
+Startfile from command line: /home/lum/5ly6/refine12_weight_0.1_stpmax_8/ase/16/16_capping.sp
+
+
+       ***********************************************************
+       *                    TeraChem v1.93P                      *
+       *                 Hg Version: 79b87f121f2d                *
+       *                   Production Version                    *
+       *                Compiled without textures                *
+       *           Chemistry at the Speed of Graphics!           *
+       ***********************************************************
+       * This program may only be used in connection with        *
+       * a valid license from PetaChem, LLC. Use of this program *
+       * or results thereof indicates acceptance of all terms    *
+       * and conditions stated in the license and that a valid   *
+       * license agreement between the user and PetaChem, LLC    *
+       * exists. PetaChem, LLC does not warrant the correctness  *
+       * of results or their suitability for any purpose.        *
+       * Please email bugs, suggestions, and comments to         *
+       *                  help@petachem.com                      *
+       *                                                         *
+       ***********************************************************
+
+
+       ***********************************************************
+       *  Compiled by toddmtz      Wed Aug 16 03:32:31 PDT 2017  *
+       *  Supported architectures: sm_20 sm_30 sm_50 sm_60       *
+       *  Cuda compilation tools, release 8.0, V8.0.44           *
+       ***********************************************************
+
+
+ Job started   Fri May 31 08:37:05 2019
+ On cu37 (available memory: 47967 MB)
+
+######################################### RUNTIME INFO ##########################################
+/public/qmsoft/TeraChem/bin/terachem /home/lum/5ly6/refine12_weight_0.1_stpmax_8/ase/16/16_capping.sp 
+
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  396.26  Mon Apr 30 18:01:39 PDT 2018
+GCC version:  gcc version 4.8.5 20150623 (Red Hat 4.8.5-4) (GCC) 
+
+	linux-vdso.so.1 (0x00007fff654cd000)
+	libcurl.so.4 => /lib64/libcurl.so.4 (0x00002aab073ed000)
+	libintbox.so.1 => /public/qmsoft/TeraChem/lib/libintbox.so.1 (0x00002aab07655000)
+	libthcbox.so.1 => /public/qmsoft/TeraChem/lib/libthcbox.so.1 (0x00002aab27263000)
+	libgridbox.so.1 => /public/qmsoft/TeraChem/lib/libgridbox.so.1 (0x00002aab28dcd000)
+	libdftbox.so.1 => /public/qmsoft/TeraChem/lib/libdftbox.so.1 (0x00002aab292be000)
+	libcublas.so.8.0 => /public/qmsoft/TeraChem/lib/libcublas.so.8.0 (0x00002aab295cf000)
+	libcufft.so.8.0 => /public/qmsoft/TeraChem/lib/libcufft.so.8.0 (0x00002aab2bf7f000)
+	libcuda.so.1 => /public/qmsoft/TeraChem/lib/libcuda.so.1 (0x00002aab34dcd000)
+	libcudart.so.8.0 => /public/qmsoft/TeraChem/lib/libcudart.so.8.0 (0x00002aab35d4d000)
+	libcrypto.so.10 => /lib64/libcrypto.so.10 (0x00002aab35fb3000)
+	libssl.so.10 => /lib64/libssl.so.10 (0x00002aab3639a000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002aab36607000)
+	libcilkrts.so.5 => /public/qmsoft/TeraChem/lib/libcilkrts.so.5 (0x00002aab36909000)
+	libstdc++.so.6 => /lib64/libstdc++.so.6 (0x00002aab36b4a000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00002aab36e52000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00002aab37068000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002aab37286000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002aab3748a000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002aab071ca000)
+	libidn.so.11 => /lib64/libidn.so.11 (0x00002aab37837000)
+	libssh2.so.1 => /lib64/libssh2.so.1 (0x00002aab37a6a000)
+	libssl3.so => /lib64/libssl3.so (0x00002aab37c94000)
+	libsmime3.so => /lib64/libsmime3.so (0x00002aab37ed6000)
+	libnss3.so => /lib64/libnss3.so (0x00002aab380fd000)
+	libnssutil3.so => /lib64/libnssutil3.so (0x00002aab38423000)
+	libplds4.so => /lib64/libplds4.so (0x00002aab3864f000)
+	libplc4.so => /lib64/libplc4.so (0x00002aab38853000)
+	libnspr4.so => /lib64/libnspr4.so (0x00002aab38a58000)
+	libgssapi_krb5.so.2 => /lib64/libgssapi_krb5.so.2 (0x00002aab38c96000)
+	libkrb5.so.3 => /lib64/libkrb5.so.3 (0x00002aab38ee2000)
+	libk5crypto.so.3 => /lib64/libk5crypto.so.3 (0x00002aab391c7000)
+	libcom_err.so.2 => /lib64/libcom_err.so.2 (0x00002aab393f9000)
+	liblber-2.4.so.2 => /lib64/liblber-2.4.so.2 (0x00002aab395fd000)
+	libldap-2.4.so.2 => /lib64/libldap-2.4.so.2 (0x00002aab3980c000)
+	libz.so.1 => /lib64/libz.so.1 (0x00002aab39a5f000)
+	librt.so.1 => /lib64/librt.so.1 (0x00002aab39c75000)
+	libnvidia-fatbinaryloader.so.396.26 => /lib64/libnvidia-fatbinaryloader.so.396.26 (0x00002aab39e7d000)
+	libkrb5support.so.0 => /lib64/libkrb5support.so.0 (0x00002aab3a0c9000)
+	libkeyutils.so.1 => /lib64/libkeyutils.so.1 (0x00002aab3a2d8000)
+	libresolv.so.2 => /lib64/libresolv.so.2 (0x00002aab3a4dc000)
+	libsasl2.so.3 => /lib64/libsasl2.so.3 (0x00002aab3a6f3000)
+	libselinux.so.1 => /lib64/libselinux.so.1 (0x00002aab3a910000)
+	libcrypt.so.1 => /lib64/libcrypt.so.1 (0x00002aab3ab35000)
+	libpcre.so.1 => /lib64/libpcre.so.1 (0x00002aab3ad6c000)
+	liblzma.so.5 => /lib64/liblzma.so.5 (0x00002aab3afcd000)
+#################################################################################################
+
+       ********************** License Check **********************
+       * Use license from: /public/qmsoft/TeraChem/license.dat
+       * Available Host id: AC1F6B20F5BC
+       * Available Host id: AC1F6B20F5BD
+       * Available Host id: 525400A418C3
+       * Available Host id: 525400A418C3
+       * License Host id: AC1F6B20F5BC
+       * License expires: 2019-10-21
+       ********************** License OK *************************
+  _________________________________
