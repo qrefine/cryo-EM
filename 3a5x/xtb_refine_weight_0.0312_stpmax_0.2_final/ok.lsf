@@ -1,0 +1,8 @@
+#!/bin/bash
+#BSUB -n 28
+#BSUB -J 3a5x_0.2
+#BSUB -q highcpu
+#BSUB -R "span[hosts=1]"
+
+qr.refine EMD-1641.map placed_model_complete.pdb mode=refine restraints=qm engine_name=xtb quantum.nproc=2 parallel.nproc=18 clustering=true max_bond_rmsd=0.005 gradient_only=true stpmax=0.2 max_iterations_refine=100 skip_weight_search=true number_of_refine_cycles=3 data_weight=0.0312 > log
+
