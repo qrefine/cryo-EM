@@ -1,0 +1,2 @@
+qr.refine 5ly6_box_complete.pdb 5ly6_box.ccp4 mode=refine restraints=cctbx clustering=false gradient_only=true stpmax=0.8 max_iterations_refine=150 skip_weight_search=true data_weight=0.1 number_of_refine_cycles=2 > log 
+
