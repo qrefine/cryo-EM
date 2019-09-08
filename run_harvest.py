@@ -7,6 +7,7 @@ import os
 from libtbx.utils import null_out
 from scitbx.array_family import flex
 from libtbx import easy_run
+from mmtbx.command_line import emringer
 
 def get_latest(files):
   indices = []
@@ -27,12 +28,14 @@ def show_geo(fn, prefix):
   return model, mes
   
 def get_z(fn):
-  cmd = " ".join([
-    "phenix.python",
-    "/Users/pafonine/Desktop/QR2019April/WL/paper/rama_z_score.py",
-    fn])
+  cmd = " ".join(["phenix.development.rama_z_score", fn])
   r = easy_run.fully_buffered(cmd).raise_if_errors()
-  return round(float(r.stdout_lines[0].split()[1]), 3)
+  return round(float(r.stdout_lines[-5].split()[2].replace(",","")), 2)
+  
+def get_emringer(pdb_file, map_file):
+  result = emringer.run(
+    args=[pdb_file, map_file], out=null_out(), verbose=False)[1].score
+  return result
 
 def run():
   # Must run in cryo-EM folder!
@@ -45,11 +48,18 @@ def run():
       print "  ...does not exist, skip."
       continue
     #
+    map_file = None
+    for fi in os.listdir(folder_1):
+      if(fi.endswith(".map") or fi.endswith(".ccp4")):
+        map_file = "/".join([folder_1, fi])
+    assert os.path.isfile(map_file)
+    #
     start = "/".join([folder_1, "initial.pdb"])
     assert os.path.isfile(start)
     z1 = get_z(start)
+    emr1 = get_emringer(start, map_file)
     model_1, mes1 = show_geo(start, prefix="     start:")
-    print mes1, "z_score:", z1
+    print mes1, "z_score:", z1, "EMRinger: %4.2f"%emr1
     #
     for sub_ in os.listdir(folder_1):
       sub = "/".join([folder_1, sub_])
@@ -77,11 +87,12 @@ def run():
       #
       model_2, mes2 = show_geo(refined, prefix="     final:")
       z2 = get_z(refined)
+      emr2 = get_emringer(refined, map_file)
       s1 = model_1.get_sites_cart()
       s2 = model_2.get_sites_cart()
       dist = flex.sqrt((s1 - s2).dot())
       print mes2, "min/max/mean(start, final): %5.3f %5.3f %5.3f"%\
-        dist.min_max_mean().as_tuple(), "z_score:", z2
+        dist.min_max_mean().as_tuple(), "z_score:", z2, "EMRinger: %4.2f"%emr2
       
 
 if(__name__ == "__main__"):
